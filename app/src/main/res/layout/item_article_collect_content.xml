@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_rect_white_bg"
+    android:minHeight="90dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:text="标题"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_tag"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_collect_tag" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:paddingStart="10dp"
+        android:layout_toRightOf="@id/iv_tag"
+        android:text="2019-01-02 12:13"
+        android:textColor="@color/tip_text_color"
+        android:textSize="12dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

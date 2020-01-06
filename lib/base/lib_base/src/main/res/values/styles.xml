@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BitFrameDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!-- 去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <!--<item name="android:backgroundDimEnabled">true</item>-->
+
+    </style>
+
+    <style name="JFrameDialogDefaultAnim">
+        <item name="android:windowEnterAnimation">@anim/j_dialog_defalut_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/j_dialog_defalut_exit_anim</item>
+    </style>
+
+    <style name="Toolbar.Style" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/jColorToolbar</item><!--背景栏颜色-->
+        <item name="colorPrimaryDark">@color/jColorToolbar</item><!--状态栏颜色-->
+        <item name="colorAccent">@color/jColorToolbar</item><!--带选中等状态控件的颜色-->
+        <item name="colorControlNormal">@color/jColorTitle</item><!--图标颜色左边及右边-->
+        <item name="android:textColorPrimary">@color/jColorTitle</item>
+        <item name="actionMenuTextColor">@color/jColorTitle
+        </item><!--右边文字颜色 优先级高与 textColorPrimary-->
+    </style>
+
+</resources>

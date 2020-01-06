@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ic_history"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="https://www.baidu.com"
+            android:gravity="center|start"
+            android:layout_marginLeft="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/sub_text_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_cancel"
+            android:layout_width="30dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_cancle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/ic_cancel_grey"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_height="1dp"
+        android:background="@color/bg_color"/>
+
+</LinearLayout>

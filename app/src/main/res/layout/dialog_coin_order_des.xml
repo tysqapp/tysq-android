@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_10dp_round_rect"
+        android:gravity="top"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="72.5dp">
+
+        <TextView
+            android:id="@+id/tv_num_1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="22.5dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/shape_round_blue"
+            android:gravity="center"
+            android:text="@string/order_des_num_1"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_num_1_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.5dp"
+            android:layout_toEndOf="@id/tv_num_1"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/order_des_1_info"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_num_2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/tv_num_1_info"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/shape_round_blue"
+            android:gravity="center"
+            android:text="@string/order_des_num_2"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_num_2_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_num_1_info"
+            android:layout_marginTop="15.5dp"
+            android:layout_toEndOf="@id/tv_num_2"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/order_des_2_info"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_num_3"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/tv_num_2_info"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginEnd="13dp"
+            android:background="@drawable/shape_round_blue"
+            android:gravity="center"
+            android:text="@string/order_des_num_3"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_num_3_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_num_2_info"
+            android:layout_marginTop="15.5dp"
+            android:layout_toEndOf="@id/tv_num_3"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/coin_des_info"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_num_3_info"
+            android:layout_alignStart="@id/tv_num_3_info"
+            android:layout_marginTop="22.5dp"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/order_des_tip"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_rank_tip_top_close" />
+
+</LinearLayout>

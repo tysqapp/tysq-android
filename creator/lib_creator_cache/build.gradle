@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+dependencies {
+    def lib = rootProject.ext
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "com.squareup:javapoet:$lib.javapoet"
+
+    implementation "com.google.code.gson:gson:$lib.gson"
+
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

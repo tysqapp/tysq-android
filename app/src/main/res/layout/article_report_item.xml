@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_article_report_item"
+        style="@style/info_ll">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/list_item_info"
+            android:layout_weight="3"
+            android:text="@string/article_report_infringement"/>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/selector_check"
+            android:clickable="false"
+            android:button="@null" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/divider_line_1dp"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>

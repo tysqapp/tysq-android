@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sort"
+    android:layout_width="match_parent"
+    android:layout_height="31dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_composite"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/article_list_composite"
+        android:textColor="@color/tip_text_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tv_composite"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/article_list_new"
+        android:textColor="@color/tip_text_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tv_new"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/article_list_hot"
+        android:textColor="@color/tip_text_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@color/main_blue_color"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:drawableStart="@drawable/ic_search_main_blue"
+        android:drawablePadding="4dp"
+        android:text="@string/article_list_search" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/divider_line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/rv_color" />
+
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/ll_child"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tyStateColor"
+        android:paddingLeft="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_checkbox_style"
+            android:button="@null"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="人工智能"
+            android:layout_toRightOf="@id/cb"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/main_text_color" />
+
+    </LinearLayout>
+</LinearLayout>

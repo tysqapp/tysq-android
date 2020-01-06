@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_orange_red_rect_border_4dp" android:state_selected="true"/>
+
+    <item android:drawable="@drawable/shape_dark_gray_rect_border_4dp" android:state_selected="false"/>
+
+</selector>

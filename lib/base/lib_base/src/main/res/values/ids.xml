@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item name="status_bar_util_fake_status_bar_view" type="id" />
+<item name="status_bar_util_translucent_view" type="id" />
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "665295079789",
+    "firebase_url": "https://tianyu-shequ.firebaseio.com",
+    "project_id": "tianyu-shequ",
+    "storage_bucket": "tianyu-shequ.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665295079789:android:d1509454e74db0137c3264",
+        "android_client_info": {
+          "package_name": "com.tysq.ty_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665295079789-a2bl2mgvbnss2k9jfpv6uv38fjf8m1p4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSzmJFznmuZs0Bk5epRoIvWlfo4DT6dpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665295079789-a2bl2mgvbnss2k9jfpv6uv38fjf8m1p4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

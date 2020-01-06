@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="@drawable/shape_white_20dp_round_top"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                style="@style/permission_control_bar_item">
+
+                <ImageView
+                    android:id="@+id/iv_edit_article"
+                    style="@style/permission_control_bar_image_view"
+                    app:srcCompat="@drawable/ic_edit_article" />
+
+                <TextView
+                    style="@style/permission_control_bar_text_view"
+                    android:text="@string/edit_modify" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                style="@style/permission_control_bar_item">
+
+                <ImageView
+                    android:id="@+id/iv_delete_article"
+                    style="@style/permission_control_bar_image_view"
+                    app:srcCompat="@drawable/ic_delete_article" />
+
+                <TextView
+                    style="@style/permission_control_bar_text_view"
+                    android:text="@string/edit_delete" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_copy"
+                style="@style/permission_control_bar_item">
+
+                <ImageView
+                    android:id="@+id/iv_copy"
+                    style="@style/permission_control_bar_image_view"
+                    app:srcCompat="@drawable/ic_copy_link" />
+
+                <TextView
+                    style="@style/permission_control_bar_text_view"
+                    android:text="@string/edit_copy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_examination"
+                style="@style/permission_control_bar_item">
+
+                <ImageView
+                    android:id="@+id/iv_examination"
+                    style="@style/permission_control_bar_image_view"
+                    app:srcCompat="@drawable/ic_examination" />
+
+                <TextView
+                    style="@style/permission_control_bar_text_view"
+                    android:text="@string/edit_examination" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_report"
+                style="@style/permission_control_bar_item"
+                android:layout_toEndOf="@id/ll_examination">
+
+                <ImageView
+                    android:id="@+id/iv_report"
+                    style="@style/permission_control_bar_image_view"
+                    app:srcCompat="@drawable/ic_report" />
+
+                <TextView
+                    style="@style/permission_control_bar_text_view"
+                    android:text="@string/edit_report" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hide_article"
+                style="@style/permission_control_bar_item"
+                android:layout_toEndOf="@id/ll_report">
+
+                <ImageView
+                    android:id="@+id/iv_hide_article"
+                    style="@style/permission_control_bar_image_view"
+                    app:srcCompat="@drawable/ic_hide"/>
+
+                <TextView
+                    android:id="@+id/tv_hide_article"
+                    style="@style/permission_control_bar_text_view"
+                    android:text="@string/edit_hide_article"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_top_article"
+                style="@style/permission_control_bar_item"
+                android:layout_toEndOf="@id/ll_report">
+
+                <ImageView
+                    android:id="@+id/iv_top_article"
+                    style="@style/permission_control_bar_image_view"
+                    app:srcCompat="@drawable/ic_top_article"/>
+
+                <TextView
+                    android:id="@+id/tv_top_article"
+                    style="@style/permission_control_bar_text_view"
+                    android:text="@string/edit_top_article"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/hsv"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_arrow_down_gray" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="105dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape_transparent_to_white_20dp_round_top" />
+
+</RelativeLayout>

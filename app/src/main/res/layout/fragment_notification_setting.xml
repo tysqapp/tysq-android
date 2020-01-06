@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_my_article"
+                style="@style/notification_title"
+                android:text="@string/notification_my_article_state" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_article_sys"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_my_article_state_sys" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_my_article_sys"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <View style="@style/white_20dp_divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_article_email"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_my_article_state_email" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_my_article_email"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_articles"
+                style="@style/notification_title"
+                android:text="@string/notification_new_article" />
+
+            <LinearLayout
+                android:id="@+id/ll_new_article_sys"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_new_article_sys" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_new_article_sys"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <View style="@style/white_20dp_divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_new_article_email"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_new_article_email" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_new_article_email"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_report"
+                style="@style/notification_title"
+                android:text="@string/notification_new_report"/>
+
+            <LinearLayout
+                android:id="@+id/ll_new_report_sys"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_new_article_sys" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_new_report_sys"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <View style="@style/white_20dp_divider" />
+
+            <LinearLayout
+                android:id="@+id/ll_new_report_email"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_new_article_email" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_new_report_email"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_my_report"
+                style="@style/notification_title"
+                android:text="@string/notification_my_report" />
+
+            <LinearLayout
+                android:id="@+id/ll_my_report_sys"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_new_comment_sys" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_my_report_sys"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_comment"
+                style="@style/notification_title"
+                android:text="@string/notification_new_comment" />
+
+            <LinearLayout
+                android:id="@+id/ll_new_comment_sys"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_new_comment_sys" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_new_comment_sys"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_new_reply"
+                style="@style/notification_title"
+                android:text="@string/notification_new_reply" />
+
+            <LinearLayout
+                android:id="@+id/ll_new_reply_sys"
+                style="@style/info_ll">
+
+                <TextView
+                    style="@style/notification_tip_text"
+                    android:text="@string/notification_new_reply_sys" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/sc_new_reply_sys"
+                    style="@style/notification_switch" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

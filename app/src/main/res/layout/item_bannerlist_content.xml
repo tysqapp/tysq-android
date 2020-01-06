@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_bannerlist_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/accout_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不游泳的鱼会"
+            android:textSize="14dp"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/main_text_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forbid_label_content"
+            android:textSize="14dp"
+            android:textColor="@color/main_text_color"
+            android:layout_toRightOf="@id/accout_name"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_modify"
+            android:layout_height="20dp"
+            android:layout_width="45dp"
+            android:background="@drawable/modify_bg"
+            android:text="修改"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.tysq.ty_android.widget.TagFlowLayout
+        android:id="@+id/tag_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        style="@style/divider_line_10dp"/>
+
+</LinearLayout>

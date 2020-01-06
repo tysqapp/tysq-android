@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/placeholder_user_photo" />
+
+    <TextView
+        android:id="@+id/tv_sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_photo"
+        android:layout_toEndOf="@id/iv_photo"
+        android:ellipsize="end"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        android:text="评论者的名字"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/tv_sender_name"
+        android:layout_marginLeft="7.5dp"
+        android:layout_marginRight="7.5dp"
+        android:layout_toEndOf="@id/tv_sender_name"
+        android:src="@drawable/ic_fill_arrow" />
+
+    <TextView
+        android:id="@+id/tv_receiver_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_arrow"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/iv_arrow"
+        android:singleLine="true"
+        android:text="被评论者的名字..."
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sender_name"
+        android:layout_alignStart="@id/tv_sender_name"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginEnd="20dp"
+        android:text="内容"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <com.tysq.ty_android.widget.TagFlowLayout
+        android:id="@+id/tag_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_alignStart="@id/tv_content"
+        android:layout_alignEnd="@id/tv_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag_flow"
+        android:layout_alignStart="@id/tv_content"
+        android:layout_marginTop="15dp"
+        android:text="刚刚"
+        android:textColor="@color/tip_text_color"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/iv_review"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_comment" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/iv_review"
+        android:layout_marginEnd="55dp"
+        android:layout_toStartOf="@id/iv_review"
+        android:padding="2dp"
+        android:src="@drawable/ic_garbage" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

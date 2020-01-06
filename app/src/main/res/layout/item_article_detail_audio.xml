@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/shape_gray_fill"
+    android:minHeight="70dp">
+
+    <ImageView
+        android:id="@+id/iv_control_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/selector_btn_radio_bg" />
+
+    <TextView
+        android:id="@+id/tv_audio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12.5dp"
+        android:layout_toRightOf="@id/iv_control_btn"
+        android:text="庸人自扰"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <com.jerry.media.widget.DefaultTimeBar
+        android:id="@+id/sb_process"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/tv_audio_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/iv_control_btn"
+        app:bar_height="2dp"
+        app:buffered_color="@color/audio_progress_buffered_color"
+        app:played_color="@color/audio_progress_played_color"
+        app:scrubber_dragged_size="10dp"
+        app:scrubber_enabled_size="6dp"
+        app:unplayed_color="@color/audio_progress_un_played_color" />
+
+    <TextView
+        android:id="@+id/tv_cur_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_process"
+        android:layout_alignStart="@id/tv_audio_name"
+        android:layout_marginBottom="5dp"
+        android:text="00:00"
+        android:textColor="@color/et_tip_text_color"
+        android:textSize="9dp" />
+
+    <TextView
+        android:id="@+id/tv_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sb_process"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="00:00"
+        android:textColor="@color/et_tip_text_color"
+        android:textSize="9dp" />
+
+</RelativeLayout>
+

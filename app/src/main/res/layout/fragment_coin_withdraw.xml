@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/v_divider"
+                style="@style/divider_line_10dp" />
+
+            <TextView
+                android:id="@+id/tv_btc_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_divider"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/withdraw_to_btc"
+                android:textColor="@color/main_text_color"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_star_address"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_btc_to"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_star_address"
+                android:layout_toEndOf="@id/tv_star_address"
+                android:text="@string/withdraw_account_address"
+                android:textColor="@color/main_text_color"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_star_address"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:minHeight="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/v_address_divider"
+                style="@style/divider_line"
+                android:layout_below="@id/et_address"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/tv_star_amount"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_address_divider"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_coin_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_star_amount"
+                android:layout_toEndOf="@id/tv_star_amount"
+                android:text="@string/withdraw_coin_amount"
+                android:textColor="@color/main_text_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_max_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_coin_amount"
+                android:layout_alignStart="@id/tv_star_amount"
+                android:layout_marginTop="10dp"
+                android:text="@string/withdraw_max_amount"
+                android:textColor="@color/tip_text_color"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_star_amount"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="20dp"
+                android:text="@string/withdraw_all"
+                android:textColor="@color/main_blue_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_btc"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/tv_max_tip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="@string/withdraw_btc"
+                android:textColor="@color/et_tip_text_color"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv_max_tip"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@id/tv_btc"
+                android:background="@color/white"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/v_amount_divider"
+                style="@style/divider_line"
+                android:layout_below="@id/et_amount"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/tv_star_email"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_amount_divider"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_email_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_star_email"
+                android:layout_toEndOf="@id/tv_star_email"
+                android:text="@string/withdraw_email_code"
+                android:textColor="@color/main_text_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_obtain_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_email_code"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="20dp"
+                android:text="@string/withdraw_obtain_email_code"
+                android:textColor="@color/main_blue_color"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/tv_obtain_code"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/white"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:singleLine="true"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/v_code_divider"
+                style="@style/divider_line"
+                android:layout_below="@id/et_code"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_code_divider"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/tv_star_email"
+                android:text="@string/withdraw_remark"
+                android:textColor="@color/main_text_color"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_remark"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/white"
+                android:minHeight="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+
+            <View
+                android:id="@+id/v_remark_divider"
+                style="@style/divider_line"
+                android:layout_below="@id/et_remark"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:id="@+id/tv_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_remark_divider"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/withdraw_fee"
+                android:textColor="@color/main_text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_fee"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7.5dp"
+                android:text="@string/withdraw_result"
+                android:textColor="@color/main_text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_result"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="20dp"
+                android:lineSpacingExtra="7dp"
+                android:text="@string/withdraw_tip"
+                android:textColor="@color/et_tip_text_color"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        style="@style/btn_blue_style"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/withdraw_commit" />
+
+</LinearLayout>

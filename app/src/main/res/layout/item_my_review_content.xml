@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_rect_white_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="回复了。。"
+        android:textColor="@color/rv_unselect"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="内容"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <com.tysq.ty_android.widget.TagFlowLayout
+        android:id="@+id/tag_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_commented_content"
+        android:layout_width="12.5dp"
+        android:layout_height="6.6dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_triangle_up_fill_gray_white" />
+
+    <TextView
+        android:id="@+id/tv_commented_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/sub_color"
+        android:paddingLeft="12.5dp"
+        android:paddingTop="15dp"
+        android:paddingRight="12.5dp"
+        android:paddingBottom="15dp"
+        android:text="回复"
+        android:textColor="@color/rv_unselect"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="时间"
+        android:textColor="@color/et_tip_text_color"
+        android:textSize="11dp" />
+
+    <View style="@style/divider_line" />
+
+</LinearLayout>

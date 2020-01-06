@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_rect_white_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:text="推荐文章标题"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/rl_tip"
+        layout="@layout/widget_article_tip" />
+
+    <View
+        style="@style/divider_line"
+        android:background="@color/rv_color" />
+
+</LinearLayout>

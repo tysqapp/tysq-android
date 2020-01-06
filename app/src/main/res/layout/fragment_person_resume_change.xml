@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/rv_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/selector_rect_white_bg">
+
+        <EditText
+            android:id="@+id/et_resume"
+            android:layout_width="match_parent"
+            style="@style/reset_pwd_et"
+            android:hint="@string/resume_change_hint"
+            android:inputType="text"
+            android:gravity="top"
+            android:paddingTop="23dp"/>
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="#FF9FADC2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="17dp"/>
+
+    </RelativeLayout>
+
+    <View style="@style/divider_line" />
+</LinearLayout>

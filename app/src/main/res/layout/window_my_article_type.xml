@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="7dp"
+        android:layout_height="3.5dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_triangle_up_black" />
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_black_top_10dp_rect"
+        android:gravity="center"
+        android:text="@string/my_article_all"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="100dp"
+        android:background="@color/des_text_color" />
+
+    <TextView
+        android:id="@+id/tv_draft"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/sub_text_color"
+        android:gravity="center"
+        android:text="@string/my_article_draft"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="100dp"
+        android:background="@color/des_text_color" />
+
+    <TextView
+        android:id="@+id/tv_exam"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/sub_text_color"
+        android:gravity="center"
+        android:text="@string/my_article_exam"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="100dp"
+        android:background="@color/des_text_color" />
+
+    <TextView
+        android:id="@+id/tv_publish"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/sub_text_color"
+        android:gravity="center"
+        android:text="@string/my_article_publish"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="100dp"
+        android:background="@color/des_text_color" />
+
+    <TextView
+        android:id="@+id/tv_refuse"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/sub_text_color"
+        android:gravity="center"
+        android:text="@string/my_article_refuse"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="100dp"
+        android:background="@color/des_text_color" />
+
+    <TextView
+        android:id="@+id/tv_hide"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_black_bottom_10dp_rect"
+        android:gravity="center"
+        android:text="@string/my_article_hide"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+</LinearLayout>

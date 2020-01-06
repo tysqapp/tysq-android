@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="91dp">
+
+    <TextView
+        android:id="@+id/tv_go_to_exam"
+        style="@style/btn_blue_style"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/selector_btn_round_blue_bg"
+        android:text="@string/exam_go_to_exam"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@id/tv_go_to_exam"
+        android:maxLines="2"
+        android:text="才女武亦姝晒书法，网友赞，专家愁：算不上书法"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="发布人"
+        android:textColor="@color/tip_text_color"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_publisher"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/tv_publisher"
+        android:text="01-02 12:13"
+        android:textColor="@color/tip_text_color"
+        android:textSize="11dp" />
+
+
+    <View
+        style="@style/divider_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,662 @@
+<resources>
+    <string name="app_name">掌上论坛</string>
+
+    <string name="main_home">首页</string>
+    <string name="main_mine">我的</string>
+    <string name="main_promotion">推广挣钱</string>
+
+    <string name="login_login">登录</string>
+    <string name="login_enter_email">请输入邮箱</string>
+    <string name="login_enter_pwd">请输入密码</string>
+    <string name="login_enter_code">请输入验证码</string>
+    <string name="login_register">没有账号，注册</string>
+    <string name="login_forget_pwd">忘记密码？</string>
+    <string name="login_success">登录成功</string>
+
+    <string name="register_register">注册</string>
+    <string name="register_enter_email">@string/login_enter_email</string>
+    <string name="register_enter_pwd">请输入密码，不少于6位</string>
+    <string name="register_enter_referral_code">请输入邀请码，选填项</string>
+    <string name="register_read_agree">我已阅读并同意</string>
+    <string name="register_protocol"><u>《用户注册协议》</u></string>
+    <string name="register_login">已有账号，登录</string>
+    <string name="register_verify_code">请输入验证码</string>
+
+    <string name="email_verify">验证邮箱</string>
+    <string name="email_verify_info">邮箱：%1$s</string>
+    <string name="email_verify_obtain_code">获取验证码</string>
+    <string name="email_verify_email_code">请输入邮箱验证码</string>
+    <string name="email_verify_backwards">%1$d 秒</string>
+    <string name="email_verify_format_illegal">邮箱格式有误</string>
+    <string name="email_verify_code_illegal">请输入邮箱验证码</string>
+    <string name="email_verify_code_id_illegal">验证码错误</string>
+    <string name="email_verify_success">邮箱验证成功</string>
+    <string name="email_verify_tip_title">注册成功</string>
+    <string name="email_verify_tip_content">验证邮箱可获得%1$s积分</string>
+    <string name="email_verify_skip">跳过</string>
+    <string name="email_verify_verify">邮箱验证</string>
+
+    <string name="forget_enter_email">@string/login_enter_email</string>
+    <string name="forget_enter_code">@string/login_enter_code</string>
+    <string name="forget_send_code">@string/email_verify_obtain_code</string>
+    <string name="forget_next_step">下一步</string>
+    <string name="forget_reset_pwd">重置密码</string>
+    <string name="forget_email_info">邮箱：%1$s</string>
+    <string name="forget_enter_new_pwd">请输入新密码，不少于6位</string>
+    <string name="forget_confirm_new_pwd">请确认新密码，不少于6位</string>
+    <string name="forget_confirm">确定</string>
+    <string name="forget_backwards">%1$d 秒</string>
+    <string name="forget_reset_suc">密码更改成功</string>
+
+    <string name="email_format_illegal">请输入正确的邮箱</string>
+    <string name="pwd_length_not_enough">密码不可少于6位</string>
+    <string name="code_not_null">请输入验证码</string>
+    <string name="protocol_read_tip">请阅读协议并同意</string>
+    <string name="code_send_suc">发送成功</string>
+    <string name="pwd_not_equal">两次密码输入不一致</string>
+
+    <string name="main_exit_click_tip">再点一次退出</string>
+    <string name="main_nav_top_recommend">推荐</string>
+    <string name="main_nav_sub_all">全部</string>
+
+    <string name="home_cancel">取消</string>
+    <string name="home_category_recommend">分类推荐</string>
+    <string name="home_category_load_error">分类数据加载失败</string>
+
+    <string name="article_list_more_ad">查看更多</string>
+    <string name="article_list_composite">综合</string>
+    <string name="article_list_new">最新</string>
+    <string name="article_list_hot">热门</string>
+    <string name="article_list_search">搜索</string>
+
+    <string name="label_title">添加标签</string>
+    <string name="label_added">已添加</string>
+    <string name="label_most">最多可以添加6个标签</string>
+    <string name="label_commit">确定</string>
+    <string name="label_most_label">最多只能添加6个标签</string>
+    <string name="label_label_search">可输入标签名称查询</string>
+    <string name="label_blank">抱歉，没有相关标签</string>
+
+    <string name="edit_title">写文章</string>
+    <string name="edit_publish">发布</string>
+    <string name="edit_save_draft">保存草稿</string>
+    <string name="edit_enter_title">请输入标题</string>
+    <string name="edit_choose_category"><color>选择分类</color></string>
+    <string name="edit_add_label">添加标签</string>
+    <string name="edit_enter_content">请输入正文</string>
+    <string name="edit_please_choose_top_first">请先选择一级分类</string>
+    <string name="edit_no_sub">该分类无二级分类</string>
+    <string name="edit_choose_category_tip">请选择分类</string>
+    <string name="edit_success">发布成功,扣%1$d积分</string>
+    <string name="edit_save_draft_success">草稿保存成功</string>
+    <string name="edit_quit_title">确定退出编辑么</string>
+    <string name="edit_content_clear_tip">编辑内容将会清空</string>
+    <string name="edit_modify">修改文章</string>
+    <string name="edit_delete">删除文章</string>
+    <string name="edit_copy">复制链接</string>
+    <string name="edit_examination">审核文章</string>
+    <string name="edit_report">举报文章</string>
+    <string name="edit_copy_suc">复制成功</string>
+    <string name="edit_delete_confirm">删除文章确认</string>
+    <string name="edit_delete_suc">删除成功</string>
+    <string name="edit_delete_title">《%1$s》</string>
+    <string name="edit_review_title">文章已提交审核</string>
+    <string name="edit_review_title_with_score">文章已提交审核,扣%1$d积分</string>
+    <string name="edit_review_content">文章会尽快审核，请耐心等待。审核状态请留意站内信息或邮件通知。</string>
+    <string name="edit_review_cancel">返回首页</string>
+    <string name="edit_review_visit">查看文章</string>
+    <string name="edit_hide_article">隐藏文章</string>
+    <string name="edit_show_article">显示文章</string>
+    <string name="edit_top_article">置顶文章</string>
+    <string name="edit_hide_article_title_dialog">确定要把该文章隐藏吗？</string>
+    <string name="edit_hide_article_contetn_dialog">隐藏后，文章不显示在主页列表和推荐列表</string>
+    <string name="edit_cancel_hide_article">确定要取消隐藏吗？</string>
+
+    <string name="category_title">分类选择</string>
+    <string name="category_top">一级分类</string>
+    <string name="category_sub">二级分类</string>
+
+    <string name="cloud_choose_img">网盘图片选择</string>
+    <string name="cloud_choose_img_hint">图片名称</string>
+    <string name="cloud_choose_video">网盘视频选择</string>
+    <string name="cloud_choose_video_hint">视频名称</string>
+    <string name="cloud_choose_audio">网盘音频选择</string>
+    <string name="cloud_choose_audio_hint">音频名称</string>
+    <string name="cloud_choose_confirm_count">确定(%1$d)</string>
+    <string name="cloud_choose_confirm">确定</string>
+    <string name="cloud_choose_limit">最多只能选择 %1$d 张照片</string>
+
+    <string name="mine_cloud">我的云盘</string>
+    <string name="mine_notification">通知</string>
+    <string name="mine_admin">版主中心</string>
+    <string name="mine_invite">邀请好友</string>
+    <string name="mine_invite_tip">送积分</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_follow">关注</string>
+    <string name="mine_fans">粉丝</string>
+    <string name="mine_about">关于我们</string>
+    <string name="mine_data_source">当前访问</string>
+    <string name="mine_login">登录</string>
+    <string name="mine_rank">积分\n%1$s</string>
+    <string name="mine_coin">金币\n%1$s</string>
+    <string name="mine_article">%1$s\n文章</string>
+    <string name="mine_review">%1$s\n评论</string>
+    <string name="mine_collect">%1$s\n收藏</string>
+    <string name="mine_attention">%1%s\n关注</string>
+    <string name="mine_coin_format">=%1$s元</string>
+
+    <string name="setting_title">设置</string>
+    <string name="setting_account">账号</string>
+    <string name="setting_password">密码</string>
+    <string name="setting_set">已设置</string>
+    <string name="setting_quit">退出</string>
+    <string name="setting_quit_tip">您确定退出么？</string>
+    <string name="setting_quit_sure">确定</string>
+    <string name="setting_quit_cancel">取消</string>
+    <string name="setting_verify">未验证</string>
+
+    <string name="reset_pwd_title">修改密码</string>
+    <string name="reset_pwd_old_hint">请输入旧密码</string>
+    <string name="reset_pwd_new">请输入新密码，不少于6位</string>
+    <string name="reset_pwd_new_confirm">请再此输入密码，不少于6位</string>
+    <string name="reset_pwd_confirm">确定</string>
+    <string name="reset_pwd_enter_old">请输入旧密码</string>
+    <string name="reset_pwd_enter_new">请输入长度大于6的新密码</string>
+    <string name="reset_pwd_enter_same">两次密码输入不一致</string>
+    <string name="reset_pwd_success">密码修改成功</string>
+
+    <string name="person_title">个人资料</string>
+    <string name="person_photo">头像</string>
+    <string name="person_nick">昵称</string>
+    <string name="person_address">现居地</string>
+    <string name="person_job">职位</string>
+    <string name="person_industry">行业</string>
+    <string name="person_resume">个人简历</string>
+    <string name="person_nick_set">已设置</string>
+    <string name="person_verify">未设置</string>
+
+    <string name="edit_text_num_max">最多只能输入10个字哦</string>
+
+    <string name="resume_change_title">个人简介</string>
+    <string name="resume_change_hint">请输入个人简介</string>
+    <string name="resume_change_empty">请输入个人简介</string>
+    <string name="resume_change_success">个人简介设置成功</string>
+    <string name="resume_change_num_max">最多只能输入50字哦</string>
+
+    <string name="address_change_title">现居地</string>
+    <string name="address_change_hint">请输入现居地</string>
+    <string name="address_change_empty">请输入现居地</string>
+    <string name="address_change_success">现居地设置成功</string>
+
+    <string name="job_change_title">职位</string>
+    <string name="job_change_hint">请输入职位</string>
+    <string name="job_change_empty">请输入职位</string>
+    <string name="job_change_success">职位设置成功</string>
+
+    <string name="industry_change_title">行业</string>
+    <string name="industry_change_hint">请输入行业</string>
+    <string name="industry_change_empty">请输入行业</string>
+    <string name="industry_change_success">行业设置成功</string>
+
+    <string name="head_photo_change_title">设置头像</string>
+    <string name="head_photo_sel_tip">请选择头像</string>
+    <string name="head_photo_change_success">头像设置成功</string>
+
+    <string name="cloud_cover_title">设置封面</string>
+    <string name="cloud_cover_sel_tip">请选择封面</string>
+    <string name="cloud_cover_change_success">封面设置成功</string>
+    <string name="cloud_cover_change">修改封面</string>
+
+    <string name="nick_change_title">设置昵称</string>
+    <string name="nick_change_hint">请输入昵称</string>
+    <string name="nick_change_empty">请输入昵称</string>
+    <string name="nick_change_success">昵称设置成功</string>
+
+    <string name="common_commit">完成</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_draft">草稿</string>
+    <string name="common_top">置顶</string>
+    <string name="common_hide">隐藏</string>
+
+    <string name="article_detail_recommend_title">相关推荐</string>
+    <string name="article_detail_review">全部评论 • %1$s</string>
+    <string name="article_detail_enter_review">输入评论&#8230;</string>
+    <string name="article_detail_more_review">查看更多回复 ></string>
+    <string name="article_detail_review_empty">快来抢占沙发吧！</string>
+    <string name="article_detail_delete_suc">删除成功</string>
+    <string name="article_detail_delete_confirm">您确认要删除这条评论吗？</string>
+    <string name="article_detail_download_confirm_title">下载</string>
+    <string name="article_detail_download_confirm_content">下载视频需要扣%1$d积分，确定要下载吗？</string>
+    <string name="article_detail_download_confirm_tip">7天内不再提示</string>
+    <string name="article_detail_video_encoding">视频转码中,请稍后再播</string>
+    <string name="article_detail_draft">@string/common_draft</string>
+    <string name="article_detail_exam_result">审核结果</string>
+    <string name="article_detail_exam_pass">通过</string>
+    <string name="article_detail_exam_refuse">驳回</string>
+    <string name="article_detail_exam_refuse_reason">请输入驳回原因</string>
+    <string name="article_detail_exam_pass_tip">通过审核</string>
+    <string name="article_detail_exam_refuse_not_empty">驳回原因不能为空</string>
+    <string name="article_detail_read_use_score">阅读文章,扣%1$d积分</string>
+    <string name="article_collect_success">收藏成功</string>
+    <string name="article_cancel_collect_success">取消成功</string>
+    <string name="article_code">输入验证码</string>
+    <string name="article_detail_hide">@string/common_hide</string>
+    <string name="article_detail_hide_article">隐藏文章成功</string>
+    <string name="article_detail_show_article">显示文章成功</string>
+    <string name="article_detail_reward_people_num">%1$d 人打赏</string>
+    <string name="article_detail_reward_num">赏%1$d金币</string>
+    <string name="article_detail_reward_coin_num">%1$d 金币</string>
+    <string name="article_detail_reward_success">打赏成功</string>
+
+    <string name="article_no_find">没有找到文章</string>
+
+    <string name="review_detail_title">评论详情</string>
+    <string name="review_detail_count">%1$d条回复</string>
+    <string name="review_detail_enter_review">@string/article_detail_enter_review</string>
+
+    <string name="review_send_title">发评论</string>
+    <string name="review_send_publish">发布</string>
+    <string name="review_send_review">回复%1$s</string>
+    <string name="review_send_quit">退出编辑</string>
+    <string name="review_send_publish_empty_tip">请填写评论内容</string>
+    <string name="review_send_quit_content">退出后内容将会清空</string>
+    <string name="review_send_success">评论成功</string>
+    <string name="review_send_success_with_score">评论成功,扣%1$d积分</string>
+
+    <string name="my_review_title">我的评论</string>
+    <string name="my_review_count">%1$d条评论</string>
+    <string name="my_review_tip_to_review">回复了 %1$s 在 《%2$s》 的评论</string>
+    <string name="my_review_tip_to_article">评论了文章 《%1$s》</string>
+
+    <string name="my_article_title">我的文章</string>
+    <string name="my_article_count">%1$d篇文章</string>
+    <string name="my_article_refuse_reason">驳回原因：%1$s</string>
+    <string name="my_article_all">全部</string>
+    <string name="my_article_draft">草稿</string>
+    <string name="my_article_exam">待审核</string>
+    <string name="my_article_publish">已发布</string>
+    <string name="my_article_refuse">审核驳回</string>
+    <string name="my_article_forbid_comment">禁止评论</string>
+    <string name="my_article_hide">已隐藏</string>
+
+    <string name="blank_empty_article">没有相关的文章哦！换个分类试试</string>
+    <string name="blank_no_exist_article">文章不存在了，在看看别的吧！</string>
+    <string name="blank_no_uploaded_file">暂无已上传的文件</string>
+    <string name="blank_no_uploading_file">暂无上传中的文件</string>
+    <string name="blank_no_download_file">暂无下载中的文件</string>
+    <string name="blank_no_satisfaction">抱歉，没有相关文件</string>
+    <string name="blank_empty_my_article">亲，你的文章列表空空的哦！</string>
+    <string name="blank_empty_my_collect">亲，你的收藏列表空空的哦！</string>
+    <string name="blank_empty_my_review">亲，你的评论列表空空的哦！</string>
+    <string name="blank_empty_withdraw_log">暂无提现记录</string>
+    <string name="blank_net_block">网络不太顺畅哦！</string>
+    <string name="blank_refresh">刷新</string>
+    <string name="blank_empty_data_log">暂无数据</string>
+    <string name="blank_empty_search_log">抱歉，没有相关搜索</string>
+
+    <string name="cloud_title">我的云盘</string>
+    <string name="cloud_uploaded">已上传(%1$d)</string>
+    <string name="cloud_uploaded_without_num">已上传</string>
+    <string name="cloud_uploading">上传中(%1$d)</string>
+    <string name="cloud_uploading_without_num">上传中</string>
+    <string name="cloud_upload">上传</string>
+    <string name="cloud_list_waiting">服务器上传中</string>
+    <string name="cloud_delete">删除</string>
+    <string name="cloud_download">下载</string>
+    <string name="cloud_download_need_permission">下载需要存储权限</string>
+    <string name="cloud_rename">重命名</string>
+    <string name="cloud_delete_success">删除成功</string>
+    <string name="cloud_pic">图片</string>
+    <string name="cloud_video">视频</string>
+    <string name="cloud_audio">音频</string>
+    <string name="cloud_other">其他</string>
+    <string name="cloud_cancel">取消</string>
+    <string name="cloud_rename_tip">请输入新的名称</string>
+    <string name="cloud_rename_enter">请输入新的文件名称</string>
+    <string name="cloud_rename_suc">修改成功</string>
+    <string name="cloud_rename_failure">取消</string>
+    <string name="cloud_delete_confirm">确定删除吗?</string>
+
+    <string name="cloud_download_with_num">正在下载(%1$d)</string>
+    <string name="cloud_download_without_num">正在下载</string>
+    <string name="cloud_download_finish_title">下载完成(%1$d)</string>
+    <string name="cloud_download_task_add_suc">已添加至下载列表</string>
+    <string name="cloud_download_task_add_failure">视频下载任务添加失败</string>
+    <string name="cloud_download_task_waiting">等待下载</string>
+
+    <string name="edit_article_title">修改文章</string>
+    <!--    <string name="edit_article_update">更新</string>-->
+    <string name="edit_article_quit_title">确定退出修改么</string>
+    <string name="edit_article_content_clear_tip">所有修改操作将会失效</string>
+    <string name="edit_article_success">发布成功</string>
+    <string name="edit_article_success_with_score">发布成功,扣%1$d积分</string>
+
+    <string name="my_rank">我的积分</string>
+    <string name="my_rank_exchange">购买积分</string>
+    <string name="my_rank_order">积分订单</string>
+    <string name="my_rank_des">积分说明</string>
+    <string name="my_rank_detail">积分明细</string>
+    <string name="my_rank_validity_period">有效期至%1$s</string>
+    <string name="my_rank_info">%1$s 积分</string>
+    <string name="my_rank_detail_empty_tip">暂无明细</string>
+    <string name="my_rank_order_empty_tip">暂无订单</string>
+
+    <string name="rank_order">@string/my_rank_order</string>
+    <string name="order_num">订单号：%1$s</string>
+    <string name="order_price">订单金额：</string>
+    <string name="order_rank_exchange">购买积分数：</string>
+    <string name="order_paid_wait_for_account">已支付，待到账</string>
+    <string name="order_paid_already_accounted">已支付，已到账</string>
+    <string name="order_wait_for_pay">待支付</string>
+
+    <string name="rank_tip_read_article">阅读该文章需扣%1$d积分，您的积分不足，请先获取积分</string>
+    <string name="rank_tip_download_video">下载视频需扣%1$d积分，您的积分不足，请先获取积分</string>
+    <string name="rank_tip_write_article">发布一篇新文章需扣%1$d积分，您的积分不足，请先获取积分</string>
+    <string name="rank_tip_write_review">每发布一条评论需要扣%1$d积分，您的积分不足，请先获取积分</string>
+    <string name="rank_tip_exchange">我要购买积分</string>
+    <string name="rank_tip_how_to_get">怎么挣积分?</string>
+    <string name="rank_tip_grade_not_enough">很抱歉，您的等级太低，不能阅读了！！ %1$s或以上会员才能阅读该文章</string>
+    <string name="rank_tip_grade_to_rank_not_enough">很抱歉，您的等级太低，不能阅读了！！ ≥%1$d积分的会员才能阅读该文章</string>
+    <string name="rank_tip_exchange_to_grade">购买积分升级</string>
+    <string name="rank_check_grade_rule">查看等级规则</string>
+
+    <string name="my_coin">我的金币</string>
+    <string name="my_coin_des">金币说明</string>
+    <string name="my_coin_detail">金币明细</string>
+    <string name="my_coin_order">金币订单</string>
+    <string name="my_coin_info">%1$s 金币</string>
+    <string name="my_coin_detail_empty_tip">暂无明细</string>
+    <string name="my_coin_withdraw">提现</string>
+    <string name="my_coin_withdraw_log">提现记录</string>
+    <string name="my_coin_withdraw_email_verify">要先验证邮箱，才能提现哦！</string>
+    <string name="my_coin_withdraw_go_to_email_verify">去验证</string>
+    <string name="my_coin_withdraw_cancel">知道了</string>
+    <string name="my_coin_order_des">说明</string>
+    <string name="my_coin_exchange">购买金币数：</string>
+    <string name="my_coin_order_paid_already">已支付</string>
+    <string name="my_coin_buy">购买</string>
+
+    <string name="coin_des_info">
+        状态变为\"已支付\",其购买的金币才会显示在积分明细,且添加到金币账户余额。
+    </string>
+
+
+    <string name="invite">邀请好友</string>
+    <string name="invite_type">邀请方式</string>
+    <string name="invite_code">提供邀请码</string>
+    <string name="invite_url">网址</string>
+    <string name="invite_copy">复制链接</string>
+    <string name="invite_scan_code">扫码注册</string>
+    <string name="invite_scale_code">查看二维码</string>
+    <string name="invite_num_title">你成功邀请了%1$d人</string>
+    <string name="invite_rule">查看规则</string>
+    <string name="invite_qr_tip">邀请好友扫码注册</string>
+    <string name="invite_qr_save">保存至手机相册</string>
+    <string name="invite_qr_suc">保存成功\n保存路径为：%1$s</string>
+    <string name="invite_qr_failure">保存失败</string>
+    <string name="invite_need_save">保存需要存储权限</string>
+    <string name="invite_banner_tip">邀请好友成功注册\n可获%1$s积分</string>
+    <string name="invite_empty_tip">暂无邀请好友</string>
+
+    <string name="permission_need_save">保存需要存储权限</string>
+
+    <string name="web_view_save_suc_tip">提示</string>
+    <string name="web_view_save_img">是否保存该图片</string>
+    <string name="web_view_save_cancel">取消</string>
+    <string name="web_view_save_confirm">确定</string>
+    <string name="web_view_save_failure">下载失败：文件创建失败</string>
+    <string name="web_view_save_suc">"图片已保存到:%1$s</string>
+    <string name="web_view_save_failure_with_message">下载失败：%1$s</string>
+
+    <string name="about_us">关于我们</string>
+    <string name="about_us_code">版本号</string>
+    <string name="about_us_code_info">V%1$s</string>
+    <string name="about_us_check_update">检测更新</string>
+
+    <string name="my_collect">我的收藏</string>
+    <string name="my_collect_title">%1$d篇文章</string>
+    <string name="my_collect_cancel">取消收藏</string>
+
+    <string name="my_attention_title">我的关注</string>
+    <string name="my_attention_num">%1$d个关注</string>
+    <string name="my_fans_title">我的粉丝</string>
+    <string name="my_fans_num">%1$d个粉丝</string>
+
+    <string name="my_lock">已关注</string>
+    <string name="my_unlock">+ 关注</string>
+
+    <string name="withdraw_log">提现记录</string>
+    <string name="withdraw_under_review">审核中</string>
+    <string name="withdraw_refuse">审核驳回</string>
+    <string name="withdraw_wait_for_arrived">审核通过，待转账</string>
+    <string name="withdraw_over">审核通过，已转账</string>
+    <string name="withdraw_coin_count">提现金币数量：</string>
+    <string name="withdraw_btc_count">到账BTC数量：</string>
+    <string name="withdraw_address">地址：</string>
+    <string name="withdraw_log_remark">备注：</string>
+    <string name="withdraw_refuse_reason">驳回原因：</string>
+    <string name="withdraw_apply_time">申请时间：</string>
+    <string name="withdraw_id">流水号：%1$s</string>
+
+    <string name="order_des_num_1">1</string>
+    <string name="order_des_num_2">2</string>
+    <string name="order_des_num_3">3</string>
+    <string name="order_des_1_info">
+        订单只有两种状态:\"待支付\"和\"已支付\"。
+    </string>
+    <string name="order_des_2_info">
+        下单后(或支付后),订单状态显示\"待支付\",待商家确认收到支付金额后,才会变为\"已支付\"。
+    </string>
+    <string name="order_des_3_info">
+        状态变为\"已支付\",其购买的积分才会显示在积分明细,且添加到积分账户余额。
+    </string>
+    <string name="order_des_tip">
+        注:为方便商家尽快确认收款信息,支付后请点击\"已支付\"按钮。
+    </string>
+    <string name="order_des">说明</string>
+
+    <string name="withdraw">提现</string>
+    <string name="withdraw_to_btc">提现至BTC账户</string>
+    <string name="withdraw_account_address">账户地址：</string>
+    <string name="withdraw_coin_amount">金币数量：</string>
+    <string name="withdraw_max_amount">最大可提数量：%1$s</string>
+    <string name="withdraw_all">全部</string>
+    <string name="withdraw_btc">≈ %1$s BTC</string>
+    <string name="withdraw_email_code">邮箱验证码：</string>
+    <string name="withdraw_obtain_email_code">获取验证码</string>
+    <string name="withdraw_verify_backwards">%1$d 秒</string>
+    <string name="withdraw_remark">备注:</string>
+    <string name="withdraw_fee">网络手续费：%1$s BTC</string>
+    <string name="withdraw_result">到账数量：%1$s BTC</string>
+    <string name="withdraw_exchange_btc">兑换BTC：</string>
+    <string name="withdraw_fee_title">网络手续费：</string>
+    <string name="withdraw_result_title">到账数量：</string>
+    <string name="withdraw_commit_sure">确认提交</string>
+    <string name="withdraw_btc_amount">%1$s BTC</string>
+    <string name="withdraw_tip">
+        注:\n
+        (1)汇率是一个波动的值，按提交申请时的汇率计算。\n
+        (2)网络手续费费率为0.5%，低于0.001BTC，则按0.001BTC收取。
+    </string>
+    <string name="withdraw_commit">提交</string>
+
+    <string name="withdraw_enter_address">请输入账户地址</string>
+    <string name="withdraw_enter_amount">请输入正确的金币数量</string>
+    <string name="withdraw_enter_code">请输入正确的邮箱验证码</string>
+    <string name="withdraw_success">提现申请已提交</string>
+
+    <string name="data_source_setting">切换网站</string>
+    <string name="data_source_enter">请输入网址</string>
+    <string name="data_source_commit">确定</string>
+    <string name="data_source_error">数据源不存在</string>
+    <string name="data_source_current">当前正访问%1$s，不需要修改</string>
+    <string name="data_source_success">数据源对接成功</string>
+    <string name="data_source_checking">数据源校验中</string>
+    <string name="data_source_website">请输入您要访问的网站</string>
+    <string name="data_source_please_enter_correct">请输入正确的网址</string>
+
+    <string name="announcement">公告</string>
+
+    <string name="update_new_version_num">最新版本：</string>
+    <string name="update_new_version_feature">新版特性：</string>
+    <string name="update_update_now">立即更新</string>
+    <string name="update_newest">已经是最新版本</string>
+
+    <string name="browser_crop">截屏</string>
+    <string name="browser_open">浏览器打开</string>
+    <string name="browser_refresh">刷新</string>
+
+    <string name="admin_center">版主中心</string>
+    <string name="admin_center_exam_article">待审核文章</string>
+    <string name="admin_center_forbid_comment">已禁止评论</string>
+
+    <string name="exam_title">待审核文章</string>
+    <string name="exam_total_num">%1$d篇</string>
+    <string name="exam_go_to_exam">去审核</string>
+
+    <string name="forbid_list_title">禁止评论列表</string>
+    <string name="forbid_list_error">禁止评论列表加载失败</string>
+    <string name="forbid_review_title">禁止评论</string>
+    <string name="forbid_label_content"> 禁止在以下模块评论</string>
+    <string name="forbid_review_label_content">%1$s 禁止在以下模块评论</string>
+
+    <string name="notification_setting_title">消息设置</string>
+    <string name="notification_my_article_state">我的文章审核通过/驳回</string>
+    <string name="notification_my_article_state_sys">系统消息提示</string>
+    <string name="notification_my_article_state_email">邮件通知</string>
+    <string name="notification_new_article">有新文章需要我审核</string>
+    <string name="notification_new_article_sys">系统消息提示</string>
+    <string name="notification_new_article_email">邮件通知</string>
+    <string name="notification_new_comment">我发布的文章有新评论</string>
+    <string name="notification_new_comment_sys">系统消息提示</string>
+    <string name="notification_new_reply">我发布的评论有新回复</string>
+    <string name="notification_new_reply_sys">系统消息提示</string>
+    <string name="notification_new_report">有新举报需要我处理</string>
+    <string name="notification_my_report">我提交的举报已被处理</string>
+
+    <string name="notification">通知</string>
+    <string name="notification_count">%1$s条通知</string>
+    <string name="notification_setting">设置</string>
+    <string name="notification_read">标为已读</string>
+    <string name="notification_all_no_read">当前没有未读通知</string>
+    <string name="notification_all_read">标记成功</string>
+
+    <string name="image_original">查看原图</string>
+    <string name="image_loading">加载中…</string>
+    <string name="image_num">%1$d/%2$d</string>
+    <string name="image_download_failure">下载失败</string>
+    <string name="image_download_success">下载成功\n文件路径：%1$s</string>
+    <string name="image_need_save_permission">下载需要存储权限</string>
+    <string name="image_url">%1$s?%2$s=%3$d</string>
+    <string name="image_original_load_suc">原图加载完毕</string>
+    <string name="image_original_load_failure">原图加载失败</string>
+
+    <string name="personal_info">%1$s\t\t|\t\t%2$s\t\t|\t\t%3$s</string>
+    <string name="personal_achievement_title">个人成就</string>
+    <string name="personal_achievement">成就</string>
+    <string name="personal_achievement_read_quantity">%1$s\n被阅读</string>
+    <string name="personal_achievement_collection">%1$s\n被收藏</string>
+    <string name="personal_article">文章(%1$s)</string>
+    <string name="personal_comment">评论(%1$s)</string>
+    <string name="personal_collection">收藏(%1$s)</string>
+    <string name="personal_focus">关注(%1$s)</string>
+    <string name="personal_fans">粉丝(%1$s)</string>
+    <string name="personal_focus_someone">关注</string>
+    <string name="personal_focused">已关注</string>
+    <string name="personal_forbid_comment">禁止评论</string>
+    <string name="personal_edit_profile">修改资料</string>
+
+    <string name="report_detail_title">举报详情</string>
+    <string name="report_detail_article">被举报文章:</string>
+    <string name="report_detail_content">举报内容:</string>
+    <string name="report_detail_question_description">问题描述:</string>
+    <string name="report_detail_process_result">处理结果:</string>
+    <string name="report_detail_result_description">结果描述:</string>
+    <string name="report_detail_report_number">举报编号:</string>
+
+    <string name="article_report">举报</string>
+    <string name="article_report_person">我要举报 %1$s</string>
+    <string name="article_report_ads_or_junk">广告或垃圾信息</string>
+    <string name="article_report_infringement">涉嫌侵权</string>
+    <string name="article_report_low_quality">低质问题</string>
+    <string name="article_report_other">其他</string>
+    <string name="article_report_et_hint">详细说明 (必填)</string>
+    <string name="article_report_success">举报成功</string>
+
+    <string name="home_page_search_article">文章</string>
+    <string name="home_page_search_tag">标签</string>
+    <string name="home_page_search_admin">用户</string>
+    <string name="home_page_search_history">搜索历史</string>
+    <string name="home_page_search_num">%1$d条搜索结果</string>
+
+    <string name="blank_no_exam_article">暂无审核文章</string>
+
+    <string name="notification_review_pass">你文章《%1$s》，已通过审核</string>
+    <string name="notification_review_unpass">很抱歉，你的文章《%1$s》，未通过审核</string>
+    <string name="notification_article_review">%1$s发布文章《%2$s》，去审核吧</string>
+    <string name="notification_article_new_comment">评论你的文章《%1$s》</string>
+    <string name="notification_comment_new_reply">回复了你在《%1$s》的评论</string>
+    <string name="notification_new_report_handler">%1$s举报文章《%2$s》，请尽快处理！举报编号：%3$s</string>
+    <string name="notification_effective_report_handler">你提交的举报已处理！处理结果：有效举报，赠送1000积分</string>
+    <string name="notification_invalid_report_handler">你提交的举报已处理！处理结果：无效处理</string>
+    <string name="notification_delete_category">文章《%1$s》选择的分类已删除，请重新选择</string>
+
+    <string name="home_last_page">上一页</string>
+    <string name="home_next_page">下一页</string>
+    <string name="home_page">%1$d/%2$d</string>
+
+    <string name="dialog_top_article_tip_1">1、请输入置顶文章的排序，数字越大的排在前面。</string>
+    <string name="dialog_top_article_tip_2">2、输入0代表取消置顶。</string>
+    <string name="dialog_top_article_tip_3">3、只能输入0和正整数。</string>
+
+    <string name="top_article_success">置顶成功</string>
+    <string name="top_article_cancel">取消置顶成功</string>
+
+    <!--等级-->
+    <string name="lv_1">LV1</string>
+    <string name="lv_2">LV2</string>
+    <string name="lv_3">LV3</string>
+    <string name="lv_4">LV4</string>
+    <string name="lv_5">LV5</string>
+    <string name="lv_6">LV6</string>
+    <string name="lv_7">LV7</string>
+    <string name="lv_8">LV8</string>
+    <string name="lv_9">黄金1</string>
+    <string name="lv_10">黄金2</string>
+    <string name="lv_11">黄金3</string>
+    <string name="lv_12">铂金1</string>
+    <string name="lv_13">铂金2</string>
+    <string name="lv_14">铂金3</string>
+    <string name="lv_15">钻石1</string>
+    <string name="lv_16">钻石2</string>
+    <string name="lv_17">钻石3</string>
+    <string name="lv_18">皇冠</string>
+
+    <string name="reward_title">打赏金币</string>
+    <string name="reward_des">千言万语都抵不过一次打赏，给作者一些鼓励吧</string>
+    <string name="reward_100">100</string>
+    <string name="reward_200">200</string>
+    <string name="reward_500">500</string>
+    <string name="reward_1000">1000</string>
+    <string name="reward_2000">2000</string>
+    <string name="reward_customize">自定义</string>
+    <string name="reward_tip">温馨提示</string>
+    <string name="reward_tip_des">您当前金币总额为%1$d，不可支出%2$d金币</string>
+    <string name="reward_tip_buy_coin">我要购买金币</string>
+    <string name="reward_tip_change_reward_coin">修改打赏数量</string>
+    <string name="reward_tip_how_to_get_coin">怎么挣金币？</string>
+    <string name="reward_select_reward_num">请选择打赏金额</string>
+    <string name="reward_edit_text_coin_tip">请输入打赏金币数</string>
+
+    <string name="reward_list_title">打赏记录</string>
+    <string name="reward_list_title_count">%1$d人打赏</string>
+    <string name="reward_list_item_reward_num">打赏%1$d金币</string>
+
+    <string name="top_article">置顶</string>
+    <string name="article_list_top_tag">@string/common_top</string>
+
+    <string name="top_article_tip_dialog_integer">只能输入0或正整数</string>
+    <string name="top_article_tip_dialog_min_coin">打赏数量不可低于100</string>
+
+</resources>

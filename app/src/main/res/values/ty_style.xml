@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginLeft">27.5dp</item>
+        <item name="android:layout_marginRight">27.5dp</item>
+        <item name="android:background">@drawable/selector_edittext_bg</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColorHint">@color/et_tip_text_color</item>
+        <item name="android:textCursorDrawable">@drawable/shape_cursor_bg</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="btn_blue_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/selector_btn_blue_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 页面主标题 -->
+    <style name="page_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">27.5dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="page_back_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:src">@drawable/ic_back</item>
+    </style>
+
+    <style name="page_sub_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/et_tip_text_color</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="toolbar_back_style">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:src">@drawable/ic_back</item>
+    </style>
+
+    <style name="list_item_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/des_text_color</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="list_item_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="notification_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:textColor">@color/des_text_color</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="notification_switch">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <style name="notification_tip_text" parent="normal_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="white_20dp_divider">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="permission_control_bar_item">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:background">@drawable/selector_round_corner_white_bg</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="permission_control_bar_image_view">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="permission_control_bar_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/main_text_color</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/rl_item"
+        android:background="@drawable/selector_rect_white_bg"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/main_text"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="蔡康永：冷淡，是最高级的情商情商情商情商情感情商情商"
+            android:ellipsize="end"/>
+
+        <com.tysq.ty_android.widget.TagFlowLayout
+            android:id="@+id/flow_layout"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_author"
+            style="@style/tip_text"
+            android:layout_below="@id/flow_layout"
+            android:textColor="@color/et_tip_text_color"
+            android:textSize="10dp"
+            android:text="作者"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_author"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toEndOf="@id/tv_author"
+            android:text="•"
+            android:textColor="@color/tip_text_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/tip_text"
+            android:layout_alignTop="@id/tv_author"
+            android:layout_toEndOf="@id/tv_dot"
+            android:textColor="@color/et_tip_text_color"
+            android:textSize="10dp"
+            android:text="时间"
+            android:paddingLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_review_img"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignTop="@id/tv_author"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="105dp"
+            app:srcCompat="@drawable/ic_comment" />
+
+        <TextView
+            android:id="@+id/tv_review_count"
+            style="@style/tip_text"
+            android:layout_alignStart="@id/iv_review_img"
+            android:layout_alignTop="@id/tv_author"
+            android:layout_marginStart="15dp"
+            android:text="1.2k" />
+
+        <ImageView
+            android:id="@+id/iv_read_img"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignTop="@id/tv_author"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@id/iv_review_img"
+            app:srcCompat="@drawable/ic_reading" />
+
+        <TextView
+            android:id="@+id/tv_read_count"
+            style="@style/tip_text"
+            android:layout_alignStart="@id/iv_read_img"
+            android:layout_alignTop="@id/tv_author"
+            android:layout_marginStart="15dp"
+            android:text="2.4k" />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="2dp"/>
+
+
+</LinearLayout>

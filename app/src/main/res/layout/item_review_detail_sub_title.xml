@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55.5dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/rv_color" />
+
+    <TextView
+        android:id="@+id/tv_review_count"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/review_detail_count"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <View style="@style/divider_line" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lib_jutils</string>
+
+    <string name="add_download_failure">添加下载任务失败，请重试</string>
+</resources>

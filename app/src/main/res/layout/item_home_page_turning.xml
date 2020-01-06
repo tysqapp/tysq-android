@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_last_page"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginEnd="8.5dp"
+        android:text="@string/home_last_page"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/et_tip_text_color"
+        android:background="@drawable/shape_light_gray_4dp_border"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_page"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8.5dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginBottom="7.5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginEnd="8.5dp"
+        android:background="@drawable/shape_light_gray_4dp_border"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_page_count_unselect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/home_page"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="@color/et_tip_text_color"
+            android:layout_centerInParent="true"
+            android:drawablePadding="7.5dp"
+            android:drawableEnd="@drawable/ic_down_triangle_gray"
+            />
+
+        <TextView
+            android:id="@+id/tv_page_count_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/home_page"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:visibility="gone"
+            android:textColor="@color/main_blue_color"
+            android:layout_centerInParent="true"
+            android:drawablePadding="7.5dp"
+            android:drawableEnd="@drawable/ic_down_triangle_blue"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_next_page"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8.5dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/home_next_page"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/et_tip_text_color"
+        android:background="@drawable/shape_light_gray_4dp_border"
+        />
+
+</LinearLayout>

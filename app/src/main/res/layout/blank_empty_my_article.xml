@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/blank_tv_tip"
+        android:text="@string/blank_empty_my_article" />
+
+    <ImageView
+        style="@style/blank_iv"
+        android:src="@drawable/ic_empty_my_article" />
+
+    <TextView
+        android:id="@+id/tv_refresh"
+        style="@style/blank_btn"
+        android:text="@string/blank_refresh" />
+
+</RelativeLayout>

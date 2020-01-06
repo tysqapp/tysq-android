@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:background="@drawable/et_round_bg"
+            style="@style/et_style"
+            android:hint="请输入用户昵称搜索"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/main_text_color"
+            android:paddingLeft="34dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:imeOptions="actionSearch"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_search_light_blue"
+            android:layout_alignLeft="@id/et_search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@id/et_search"
+            android:paddingRight="5dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ic_cancel"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:srcCompat="@drawable/ic_cancel"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="10dp"
+        android:background="#dddddd" />
+
+    <com.zinc.jrecycleview.JRecycleView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+</LinearLayout>

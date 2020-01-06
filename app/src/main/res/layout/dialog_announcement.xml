@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2.5dp"
+    android:layout_marginEnd="2.5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_horn"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/ic_horn" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_rank_tip_top_close" />
+
+    <View
+        android:id="@+id/v_divider_dark"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:layout_below="@id/iv_horn"
+        android:background="@drawable/shape_round_announcement_light_blue" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7.5dp"
+        android:layout_below="@id/iv_horn"
+        android:layout_margin="3.5dp"
+        android:background="@drawable/shape_round_announcement_drak_blue" />
+
+    <View
+        android:id="@+id/v_divider_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_alignTop="@id/v_divider_dark"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7.5dp"
+        android:background="@drawable/shape_transparent_to_blue" />
+
+    <com.zinc.jrecycleview.JRecycleView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_divider_transparent"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginEnd="7.5dp"
+        android:background="@drawable/shape_white_10dp_bottom_round_rect" />
+
+</RelativeLayout>

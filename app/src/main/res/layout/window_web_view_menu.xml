@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="7dp"
+        android:layout_height="3.5dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="21.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_triangle_up_black" />
+
+    <LinearLayout
+        android:id="@+id/ll_crop"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_black_top_10dp_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_crop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/browser_crop"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="130dp"
+        android:background="@color/des_text_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_open"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@color/sub_text_color">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_browser" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/browser_open"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="130dp"
+        android:background="@color/des_text_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_refresh"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_black_bottom_10dp_rect">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_webview_refresh" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/browser_refresh"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

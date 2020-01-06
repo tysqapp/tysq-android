@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingItemView">
+        <attr name="setting_icon" format="reference|color" />
+        <attr name="setting_title" format="string" />
+        <attr name="setting_tip" format="string" />
+        <attr name="setting_arrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="draw_text" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80.5dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_cover"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_file_other" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_alignStart="@id/iv_icon"
+            android:layout_alignTop="@id/iv_icon"
+            android:background="@drawable/ic_crop_left_top_round" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_alignStart="@id/iv_icon"
+            android:layout_alignBottom="@id/iv_icon"
+            android:background="@drawable/ic_crop_left_bottom_round" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_alignEnd="@id/iv_icon"
+            android:layout_alignBottom="@id/iv_icon"
+            android:background="@drawable/ic_crop_right_bottom_round" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_alignTop="@id/iv_icon"
+            android:layout_alignEnd="@id/iv_icon"
+            android:background="@drawable/ic_crop_right_top_round" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignStart="@id/progress_view"
+            android:layout_alignTop="@id/progress_view"
+            android:layout_margin="12.5dp"
+            app:srcCompat="@drawable/ic_cloud_download" />
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/progress_view"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="25%"
+            android:textColor="@color/progress_text_color"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/progress_view"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="重新下载"
+            android:textColor="@color/red"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="下载失败"
+            android:textColor="@color/red"
+            android:textSize="11dp" />
+
+        <com.tysq.ty_android.widget.ProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:draw_text="false" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/rl_progress"
+        android:layout_toEndOf="@id/ll_cover"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="刚出炉的一套北欧INS风效果图整体色调偏复古.mp4刚出炉的一套北欧INS风效果图整体色调偏复古.mp4刚出炉的一套北欧INS风效果图整体色调偏复古.mp4"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_alignStart="@id/tv_name"
+        android:layout_marginTop="8dp"
+        android:text="2019-5-5 17:54    151MB"
+        android:textColor="@color/des_text_color"
+        android:textSize="11dp" />
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:background="@color/divider_color" />
+
+</RelativeLayout>

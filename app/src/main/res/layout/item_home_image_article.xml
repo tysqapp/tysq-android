@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/selector_rect_white_bg"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/shape_placeholder_4dp" />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_alignStart="@id/iv_cover"
+        android:layout_alignTop="@id/iv_cover"
+        android:background="@drawable/ic_crop_left_top_round" />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_alignStart="@id/iv_cover"
+        android:layout_alignBottom="@id/iv_cover"
+        android:background="@drawable/ic_crop_left_bottom_round" />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_alignEnd="@id/iv_cover"
+        android:layout_alignBottom="@id/iv_cover"
+        android:background="@drawable/ic_crop_right_bottom_round" />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="4dp"
+        android:layout_alignTop="@id/iv_cover"
+        android:layout_alignEnd="@id/iv_cover"
+        android:background="@drawable/ic_crop_right_top_round" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="114dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shape_dark_gray_rect_border_3_5dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/main_text"
+        android:layout_marginBottom="8dp"
+        android:layout_toStartOf="@id/iv_cover"
+        android:text="标题" />
+
+    <com.tysq.ty_android.widget.TagFlowLayout
+        android:id="@+id/flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="5dp"
+        android:layout_toLeftOf="@id/iv_cover"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        style="@style/sub_text"
+        android:layout_below="@id/flow_layout"
+        android:layout_toStartOf="@id/iv_cover"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="内容" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        style="@style/tip_text"
+        android:layout_below="@id/tv_des"
+        android:layout_marginTop="15dp"
+        android:text="作者" />
+
+    <TextView
+        android:id="@+id/tv_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toEndOf="@id/tv_author"
+        android:text="•"
+        android:textColor="@color/tip_text_color"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/tip_text"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_toEndOf="@id/tv_dot"
+        android:text="时间" />
+
+    <ImageView
+        android:id="@+id/iv_review_img"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@id/iv_cover"
+        app:srcCompat="@drawable/ic_comment" />
+
+    <TextView
+        android:id="@+id/tv_review_count"
+        style="@style/tip_text"
+        android:layout_alignStart="@id/iv_review_img"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_marginStart="15dp"
+        android:text="4.53k" />
+
+    <ImageView
+        android:id="@+id/iv_read_img"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_marginEnd="30dp"
+        android:layout_toStartOf="@id/iv_review_img"
+        app:srcCompat="@drawable/ic_reading" />
+
+    <TextView
+        android:id="@+id/tv_read_count"
+        style="@style/tip_text"
+        android:layout_alignStart="@id/iv_read_img"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_marginStart="15dp"
+        android:text="2.3k" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="20dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/placeholder_user_photo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_photo"
+        android:layout_toEndOf="@id/iv_photo"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="名字"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_alignStart="@id/tv_title"
+        android:layout_marginTop="7.5dp"
+        android:text="内容"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <com.tysq.ty_android.widget.TagFlowLayout
+        android:id="@+id/tag_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_alignStart="@id/tv_content"
+        android:layout_alignEnd="@id/tv_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag_flow"
+        android:layout_alignStart="@id/tv_content"
+        android:layout_marginTop="15dp"
+        android:text="刚刚"
+        android:textColor="@color/tip_text_color"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/iv_review"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:src="@drawable/ic_comment" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/iv_review"
+        android:layout_marginEnd="55dp"
+        android:layout_toStartOf="@id/iv_review"
+        android:padding="2dp"
+        android:src="@drawable/ic_garbage" />
+
+</RelativeLayout>

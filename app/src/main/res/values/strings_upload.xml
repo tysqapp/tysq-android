@@ -1,0 +1,16 @@
+<resources>
+    <string name="upload_file_not_exist">文件不存在</string>
+
+    <string name="upload_file_need_permission">上传需要读取权限</string>
+
+    <string name="upload_not_find_file">文件不存在</string>
+    <string name="upload_file_info_error">文件信息有误</string>
+    <string name="upload_data_error">文件数据有误</string>
+
+    <string name="upload_enough_storage">请检测内存空间是否充足</string>
+    <string name="upload_copy_error">上传失败</string>
+    <string name="upload_net_error">网络异常</string>
+
+    <string name="upload_task_exist">上传任务已经存在</string>
+
+</resources>

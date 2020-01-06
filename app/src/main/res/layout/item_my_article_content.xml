@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_rect_white_bg"
+    android:minHeight="90dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:minHeight="90dp">
+        <!--TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏"
+            android:background="@drawable/shape_blue_rect"
+            android:textSize="14dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="标题"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="2019-01-02 12:13"
+            android:textColor="@color/tip_text_color"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/iv_review_img"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@id/tv_time"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/ic_comment" />
+
+        <TextView
+            android:id="@+id/tv_review_count"
+            style="@style/tip_text"
+            android:layout_alignStart="@id/iv_review_img"
+            android:layout_alignTop="@id/iv_review_img"
+            android:layout_marginStart="20dp"
+            android:text="评论数" />
+
+        <ImageView
+            android:id="@+id/iv_read_img"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignTop="@id/iv_review_img"
+            android:layout_marginEnd="50dp"
+            android:layout_toStartOf="@id/iv_review_img"
+            android:src="@drawable/ic_reading" />
+
+        <TextView
+            android:id="@+id/tv_read_count"
+            style="@style/tip_text"
+            android:layout_alignStart="@id/iv_read_img"
+            android:layout_alignTop="@id/iv_review_img"
+            android:layout_marginStart="20dp"
+            android:text="浏览量" />
+
+        <View
+            android:id="@+id/v_divider_refuse_reason"
+            style="@style/divider_line"
+            android:layout_below="@id/tv_time"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_refuse_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_divider_refuse_reason"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/my_article_refuse_reason"
+            android:textColor="@color/red"
+            android:textSize="11dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_article_state"
+            android:layout_width="78dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_refuse" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

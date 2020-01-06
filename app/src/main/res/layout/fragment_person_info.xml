@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color"
+    android:orientation="vertical">
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_photo"
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/normal_text"
+            android:text="@string/person_photo" />
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_user_photo" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_nick"
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/normal_text"
+            android:text="@string/person_nick" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/info_tv"
+            android:layout_marginEnd="20dp"
+            android:text="@string/person_nick_set" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/normal_text"
+            android:text="@string/person_address" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/info_tv"
+            android:layout_marginEnd="20dp"
+            android:text="@string/person_verify" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_job"
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/normal_text"
+            android:text="@string/person_job" />
+
+        <TextView
+            android:id="@+id/tv_job"
+            style="@style/info_tv"
+            android:layout_marginEnd="20dp"
+            android:text="@string/person_verify"/>
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_industry"
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/normal_text"
+            android:text="@string/person_industry" />
+
+        <TextView
+            android:id="@+id/tv_industry"
+            style="@style/info_tv"
+            android:layout_marginEnd="20dp"
+            android:text="@string/person_verify" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_resume"
+        style="@style/info_ll"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/normal_text"
+            android:text="@string/person_resume"
+            android:layout_height="90dp"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_resume"
+            style="@style/info_tv_big"
+            android:layout_marginEnd="20dp"
+            android:text="@string/person_verify" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_line" />
+</LinearLayout>

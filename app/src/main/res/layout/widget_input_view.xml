@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_edittext_with_gray_border_bg"
+        android:hint="@string/cloud_rename_tip"
+        android:paddingStart="20dp"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_page_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/toolbar_back_style"
+            android:layout_marginLeft="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginLeft="50dp"
+            android:layout_toLeftOf="@id/tv_search"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:id="@+id/ll_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_page_search_article"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerVertical="true"/>
+
+
+                <ImageView
+                    android:id="@+id/ic_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/ic_triangle_up_black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/tv_label"
+                    android:rotation="180"
+                    android:layout_centerVertical="true"/>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider"
+                style="@style/tag_line_12dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/ll_tag"
+                android:layout_marginLeft="11dp"
+                android:background="@color/lock_color"/>
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:imeOptions="actionSearch"
+                android:background="@null"
+                android:hint="请输入搜索内容"
+                android:textSize="14dp"
+                android:layout_toRightOf="@id/divider"
+                android:textColor="@color/main_text_color"
+                android:maxLines="1"
+                android:layout_marginRight="15dp"
+                android:singleLine="true"/>
+
+            <ImageView
+                android:id="@+id/ic_cancel"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/ic_cancel"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_alignParentRight="true"
+            android:textSize="14dp"
+            android:layout_marginLeft="17dp"
+            android:textColor="@color/main_blue_color"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_below="@id/rl_home_page_search"
+        style="@style/divider_line"/>
+
+    <LinearLayout
+        android:layout_below="@id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_search">
+
+        <com.zinc.jrecycleview.JRecycleView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/web_advertisement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+</RelativeLayout>

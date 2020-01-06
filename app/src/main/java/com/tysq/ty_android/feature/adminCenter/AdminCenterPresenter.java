@@ -1,0 +1,38 @@
+package com.tysq.ty_android.feature.adminCenter;
+
+import android.support.annotation.NonNull;
+
+import com.bit.presenter.BasePresenter;
+import com.tysq.ty_android.net.RetrofitFactory;
+import com.tysq.ty_android.net.rx.RxParser;
+import com.tysq.ty_android.net.rx.RxSingleSubscriber;
+
+import javax.inject.Inject;
+
+import response.article.ReviewArticleListResp;
+
+public final class AdminCenterPresenter extends BasePresenter<AdminCenterView> {
+    @Inject
+    public AdminCenterPresenter(AdminCenterView view) {
+        super(view);
+    }
+
+    public void loadExamArticleInfo() {
+
+        RetrofitFactory
+                .getApiService()
+                .getReviewArticles(0, 1, -1)
+                .compose(RxParser.handleSingleDataResult())
+                .subscribe(new RxSingleSubscriber<ReviewArticleListResp>(mySelf) {
+                    @Override
+                    protected void onError(int code, String message) {
+                        mView.onLoadExamArticleInfo("");
+                    }
+
+                    @Override
+                    protected void onSuccessRes(@NonNull ReviewArticleListResp value) {
+                        mView.onLoadExamArticleInfo(value.getArticlesNum() + "");
+                    }
+                });
+    }
+}

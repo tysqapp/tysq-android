@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/page_back_style" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/page_title_style"
+        android:text="@string/email_verify" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        style="@style/page_sub_text_style"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/forget_email_info" />
+
+    <EditText
+        android:id="@+id/et_code"
+        style="@style/et_style"
+        android:layout_below="@id/tv_email"
+        android:layout_marginTop="22.5dp"
+        android:hint="@string/email_verify_email_code" />
+
+    <TextView
+        android:id="@+id/tv_send_code"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/et_code"
+        android:layout_alignRight="@id/et_code"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/email_verify_obtain_code"
+        android:textColor="@color/main_blue_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/btn_blue_style"
+        android:layout_below="@id/et_code"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="27.5dp"
+        android:text="@string/forget_confirm" />
+
+</RelativeLayout>

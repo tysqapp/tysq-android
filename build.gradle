@@ -1,0 +1,86 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.1'
+
+        classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.2'
+
+        // firebase
+        classpath 'com.google.gms:google-services:4.2.0'
+        classpath 'io.fabric.tools:gradle:1.29.0'  // Crashlytics plugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // app 版本信息 TODO 记得改回
+    versionName = '5.3.20'
+    versionCode = 53020
+    minSdkVersion = 19
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+
+    // 官方包版本
+    appcompatV7 = '27.1.1'
+    supportDesign = "27.1.1"
+    supportpalette = "27.1.1"
+    junitVersion = '4.12'
+
+    // 网络请求
+    okhttp = '3.11.0'
+    retrofitGson = '2.4.0'
+    retrofitRxjavaAdapter = "1.0.0"
+    retrofit = '2.4.0'
+    // rxJava
+    rxjava = "2.1.14"
+    rxandroid = "2.0.2"
+    // 注解
+    annotation = "1.0"
+    // 对话框
+    materialDialogs = "0.9.6.0"
+    JRecycleView = '1.0.0'
+    JPermission = '0.7'
+    // 视图注入
+    butterknife = '8.6.0'
+    // 依赖注入
+    dagger = '2.11'
+    // 图片管理
+    glide = '4.5.0'
+    // 事件总线
+    eventBus = '3.1.1'
+    multidex = '1.0.2'
+    // Gson
+    gson = '2.8.2'
+    javapoet = '1.9.0'
+
+    firebaseCore = '16.0.8'
+    firebaseCrashlytics = '2.10.1'
+
+    GSYVideoPlayer = '6.0.3'
+
+    PictureSelector = 'v2.2.3'
+
+    aspectjrt = '1.8.9'
+
+    dbflowVersion = "4.2.4"
+}

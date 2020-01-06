@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#1296db</color>
+    <color name="colorPrimaryDark">#1296db</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="jColorToolbar">@color/colorPrimary</color>
+
+    <color name="jColorTitle">@android:color/white</color>
+
+    <color name="jWidgetStartAndPauseColor">#999999</color>
+    <color name="jWidgetCircleColor">#999999</color>
+    <color name="jWidgetProgressColor">#308fff</color>
+
+    <color name="tyStateColor">#ffffff</color>
+
+    <color name="bitProgressBarColor">#0081cc</color>
+    <color name="bitProgressBarSecondaryColor">#990081cc</color>
+
+    <color name="white">#ffffff</color>
+    <color name="alpha_50_white">#7fffffff</color>
+
+    <color name="divider_color">#dddddd</color>
+
+    <color name="replace_color">#eeeeee</color>
+
+    <color name="unselect_color">#cccccc</color>
+
+    <color name="select_text_color">#111111</color>
+
+    <color name="main_blue_color">#598cf2</color>
+    <color name="alpha_main_blue_color">#b3caf9</color>
+
+    <color name="light_blue_color">#36b6f9</color>
+
+    <color name="label_blue_color">#dde8fc</color>
+
+    <!-- 主文字颜色 -->
+    <color name="main_text_color">#333333</color>
+    <!-- 次文字颜色 -->
+    <color name="sub_text_color">#666666</color>
+    <!-- 说明子颜色-->
+    <color name="des_text_color">#999999</color>
+    <!-- 提示文字颜色 -->
+    <color name="tip_text_color">#a5aab3</color>
+    <!-- 输入框背景颜色 -->
+    <color name="et_bg_color">#ebf3f8</color>
+    <!-- 输入框提示文字颜色 -->
+    <color name="et_tip_text_color">#9fadc2</color>
+    <!-- 背景颜色 -->
+    <color name="bg_color">#f5f5f5</color>
+    <!-- 锁住颜色，不可使用 -->
+    <color name="lock_color">#dddddd</color>
+    <!-- recycleView 的背景色 -->
+    <color name="rv_color">#f5f5f5</color>
+    <!--搜索成功后的红色高亮显示-->
+    <color name="search_color">#FF0000</color>
+
+    <color name="rv_unselect">#999999</color>
+
+    <color name="red">#ee0000</color>
+
+    <color name="sub_color">#f6f9fb</color>
+
+    <color name="orange_color">#f3842b</color>
+
+    <color name="progress_start_color">@color/light_green_color</color>
+    <color name="progress_end_color">@color/green_color</color>
+    <color name="progress_text_color">@color/green_color</color>
+    <color name="progress_circle_color">@color/replace_color</color>
+
+    <color name="audio_progress_played_color">#9fafc1</color>
+    <color name="audio_progress_un_played_color">#d4e1ea</color>
+    <color name="audio_progress_buffered_color">#bbc8db</color>
+
+    <color name="orange_red_color">#fb605d</color>
+    <color name="light_orange_red_color">#ff8d76</color>
+
+    <color name="gold_color">#cb9742</color>
+    <color name="light_gold_color">#e8bf78</color>
+
+    <color name="green_color">#23ae19</color>
+    <color name="light_green_color">#34f153</color>
+
+    <color name="shadow_blue_color">#7f673edd</color>
+    <color name="shadow_orange_red_color">#7ffb605d</color>
+    <color name="shadow_gold_color">#7fcb9742</color>
+    <color name="shadow_black_color">#7fdddddd</color>
+    <color name="shadow_black_color_1">#33000000</color>
+
+    <color name="alpha_black_color">#66000000</color>
+    
+    <color name="announcement_light_blue">#3a78ef</color>
+    <color name="announcement_dark_blue">#2263df</color>
+
+    <color name="draft_bg">#f5b325</color>
+    <color name="hide_bg">#4B94EE</color>
+
+    <color name="report_item_color">#000000</color>
+
+    <color name="cloud_delete">#f05b5b</color>
+    <color name="cloud_download">#f18c3b</color>
+    <color name="cloud_rename">#f5ac3b</color>
+
+    <color name="article_reward_bg">#F56C6C</color>
+    <!--置顶文章-->
+    <color name="article_top">#F25979</color>
+
+</resources>

@@ -1,0 +1,101 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = [
+                    'src/main/bit',
+                    'src/main/mvp'
+            ]
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+}
+
+dependencies {
+    def lib = rootProject.ext
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:appcompat-v7:$lib.appcompatV7"
+    api "com.android.support:design:$lib.supportDesign"
+
+    testImplementation "junit:junit:$lib.junitVersion"
+
+    // okHttp
+    api "com.squareup.okhttp3:okhttp:$lib.okhttp"
+
+    // Retrofit库
+    // Android 支持 Retrofit
+    api "com.squareup.retrofit2:retrofit:$lib.retrofit"
+    // 衔接 Retrofit & RxJava
+    api "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$lib.retrofitRxjavaAdapter"
+
+    // 支持Gson解析
+    api "com.squareup.retrofit2:converter-gson:$lib.retrofitGson"
+
+    // RxJava
+    api "io.reactivex.rxjava2:rxandroid:$lib.rxandroid"
+    api "io.reactivex.rxjava2:rxjava:$lib.rxjava"
+
+    // 依赖注入（dagger2）
+    api "com.google.dagger:dagger:$lib.dagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$lib.dagger"
+    compileOnly "javax.annotation:jsr250-api:$lib.annotation"
+
+    //视图绑定（butterknife）
+    api "com.jakewharton:butterknife:$lib.butterknife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$lib.butterknife"
+
+    // material 风格的 dialogs
+    api "com.afollestad.material-dialogs:core:$lib.materialDialogs"
+
+//    api "com.github.xxx:JRecycleview:$lib.JRecycleView"
+    api project(":lib:widget:lib_recycleview")
+    api "com.github.zincPower:JPermission:$lib.JPermission"
+
+    // EventBus
+    api "org.greenrobot:eventbus:$lib.eventBus"
+
+    // 获取颜色
+    implementation "com.android.support:palette-v7:$lib.supportpalette"
+
+    // 图片加载
+    api("com.github.bumptech.glide:okhttp3-integration:$lib.glide") {
+        exclude group: "com.android.support"
+    }
+
+    api files('libs/zxing.jar')
+
+    api project(':lib:base:lib_utils')
+    api project(':lib:base:lib_log')
+
+    api "com.github.Raizlabs.DBFlow:dbflow-core:$lib.dbflowVersion"
+    api "com.github.Raizlabs.DBFlow:dbflow:$lib.dbflowVersion"
+    api "com.github.Raizlabs.DBFlow:dbflow-sqlcipher:$lib.dbflowVersion"
+
+}

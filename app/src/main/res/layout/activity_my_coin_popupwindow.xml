@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="8dp"
+        android:layout_height="4dp"
+        android:src="@drawable/ic_triangle_up_black"
+        android:layout_marginStart="65dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_coin_des"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_black_top_5dp_rect"
+        android:gravity="center"
+        android:text="@string/my_coin_des"
+        android:textColor="@color/white"
+        android:textSize="14dp"/>
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="80dp"
+        android:background="@color/des_text_color"/>
+
+    <TextView
+        android:id="@+id/tv_withdraw_log"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@color/sub_text_color"
+        android:gravity="center"
+        android:text="@string/my_coin_withdraw_log"
+        android:textColor="@color/white"
+        android:textSize="14dp"/>
+
+    <View
+        style="@style/divider_line"
+        android:layout_width="80dp"
+        android:background="@color/des_text_color"/>
+
+    <TextView
+        android:id="@+id/tv_coin_order"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_black_bottom_5dp_rect"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:text="@string/my_coin_order"/>
+</LinearLayout>

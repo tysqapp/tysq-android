@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/blank_icon"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_empty_my_article" />
+
+        <TextView
+            android:id="@id/blank_tip"
+            style="@style/blank_tv_tip"
+            android:text="提示"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@id/blank_refresh_btn"
+            style="@style/blank_btn"
+            android:text="@string/blank_refresh" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

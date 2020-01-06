@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color">
+
+    <View
+        android:id="@+id/v_divider_0"
+        style="@style/divider_line"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_code"
+        style="@style/info_ll"
+        android:layout_below="@id/v_divider_0">
+
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="60dp"
+            android:layout_weight="0"
+            android:text="@string/about_us_code" />
+
+        <TextView
+            android:id="@+id/tv_code"
+            style="@style/info_tv"
+            android:layout_weight="1"
+            android:gravity="end|center_vertical"
+            android:text="@string/about_us_code_info" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider_1"
+        style="@style/divider_line"
+        android:layout_width="20dp"
+        android:layout_below="@id/ll_code"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_update"
+        style="@style/info_ll"
+        android:layout_below="@id/v_divider_1">
+
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/about_us_check_update" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider_2"
+        style="@style/divider_line"
+        android:layout_below="@id/ll_update" />
+
+</RelativeLayout>

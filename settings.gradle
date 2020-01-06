@@ -1,0 +1,32 @@
+include ':app',
+
+        // sp缓存
+        ':creator:lib_creator_cache',
+        // 架构脚本
+        ':creator:lib_creator_mvp',
+
+        // 工具
+        ':lib:base:lib_utils',
+        // 日志
+        ':lib:base:lib_log',
+        // 基础
+        ':lib:base:lib_base',
+
+        // 文件选择
+        ':lib:widget:lib_file_selector',
+        // banner
+        ':lib:widget:lib_banner',
+        // 轮播
+        ':lib:widget:lib_wheelview',
+
+        ':lib:widget:lib_recycleview',
+
+        // 富文本
+        ':lib:special:lib_jerry_editor',
+        // websocket
+        ':lib:special:lib_websocket',
+        // 缓存
+        ':lib:special:lib_cache',
+        // 多线程下载
+        ':lib:special:lib_multi_download'
+

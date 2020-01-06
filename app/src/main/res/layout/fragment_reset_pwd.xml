@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <View style="@style/divider_line" />
+
+    <LinearLayout style="@style/reset_pwd_ll">
+
+        <EditText
+            android:id="@+id/et_old_pwd"
+            style="@style/reset_pwd_et"
+            android:hint="@string/reset_pwd_old_hint" />
+
+        <ImageView
+            android:id="@+id/iv_old_pwd"
+            style="@style/reset_pwd_state" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout style="@style/reset_pwd_ll">
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            style="@style/reset_pwd_et"
+            android:hint="@string/reset_pwd_new" />
+
+        <ImageView
+            android:id="@+id/iv_new_pwd"
+            style="@style/reset_pwd_state" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <LinearLayout style="@style/reset_pwd_ll">
+
+        <EditText
+            android:id="@+id/et_new_pwd_confirm"
+            style="@style/reset_pwd_et"
+            android:hint="@string/reset_pwd_new_confirm" />
+
+        <ImageView
+            android:id="@+id/iv_new_pwd_confirm"
+            style="@style/reset_pwd_state" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/btn_blue_style"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/reset_pwd_confirm" />
+
+</LinearLayout>

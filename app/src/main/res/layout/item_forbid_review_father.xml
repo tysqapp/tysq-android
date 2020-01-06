@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_banner_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/divider"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/ll_cb_check"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp">
+
+            <CheckBox
+                android:id="@+id/cb_check"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:button="@null"
+                android:background="@drawable/ic_checkbox_style"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:padding="20dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人工智能"
+            android:layout_toRightOf="@id/ll_cb_check"
+            android:textSize="14dp"
+            android:layout_centerVertical="true"
+            android:textColor="#333333"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

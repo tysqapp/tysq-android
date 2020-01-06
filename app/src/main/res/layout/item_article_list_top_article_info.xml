@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:id="@+id/ll_top_article">
+    
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="17dp"
+        android:background="@drawable/shape_pink_2dp_border_round_rect"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/article_top"
+        android:text="置顶"
+        android:textSize="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提高情商，我推荐这5本书"
+        android:textSize="12dp"
+        android:textColor="@color/main_text_color"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

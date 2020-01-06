@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="335dp"
+    android:layout_height="400dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/shape_white_10dp_round_rect">
+
+        <ImageView
+            android:id="@+id/iv_tip"
+            android:layout_width="102dp"
+            android:layout_height="93dp"
+            android:src="@drawable/img_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"/>
+
+        <TextView
+            android:id="@+id/tv_reward_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reward_tip"
+            android:textSize="16dp"
+            android:textColor="@color/main_text_color"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"/>
+
+        <TextView
+            android:id="@+id/tv_reward_tip_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reward_tip_des"
+            android:textColor="@color/main_text_color"
+            android:layout_below="@id/tv_reward_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_reward_tip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@id/tv_reward_tip_des"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_reward_tip_buy_coin"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/reward_tip_buy_coin"
+                android:background="@drawable/selector_btn_blue_bg"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_below="@id/tv_reward_tip_des"
+                />
+
+            <TextView
+                android:id="@+id/tv_reward_tip_change_coin"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/reward_tip_change_reward_coin"
+                android:background="@drawable/selector_btn_blue_bg"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_below="@id/tv_reward_tip_des"
+                android:layout_toRightOf="@id/tv_reward_tip_buy_coin"
+                android:layout_marginLeft="23dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_how_to_earn_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reward_tip_how_to_get_coin"
+            android:textColor="@color/main_blue_color"
+            android:textSize="12dp"
+            android:layout_below="@id/ll_reward_tip_btn"
+            android:layout_alignRight="@id/ll_reward_tip_btn"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_rank_tip_top_close"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

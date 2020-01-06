@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/toolbar_back_style" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_title"
+        android:text="@string/cloud_choose_img" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:padding="12dp"
+        android:src="@drawable/ic_search_black" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@id/iv_back"
+        android:background="@drawable/shape_gray_fill"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_black" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="@string/cloud_choose_img_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/et_tip_text_color"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/ic_close_fill_gray" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        style="@style/divider_line"
+        android:layout_below="@id/tv_title" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/btn_blue_style"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/cloud_choose_confirm" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider_bottom"
+        style="@style/divider_line"
+        android:layout_above="@id/ll_confirm" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/v_divider_bottom"
+        android:layout_below="@id/v_divider" />
+
+</RelativeLayout>

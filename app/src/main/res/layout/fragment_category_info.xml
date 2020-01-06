@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/home_cancel"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <View
+        android:id="@+id/v_divider"
+        style="@style/divider_line"
+        android:layout_below="@id/tv_cancel" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_divider"
+        android:background="@color/rv_color" />
+
+    <RelativeLayout
+        android:id="@+id/rl_recommend_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignTop="@id/recycle_view"
+        android:layout_toEndOf="@id/recycle_view">
+
+        <TextView
+            android:id="@+id/tv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:gravity="center"
+            android:text="@string/home_category_recommend"
+            android:textColor="@color/main_text_color"
+            android:textSize="12dp" />
+
+        <View
+            style="@style/divider_line"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tv_recommend" />
+
+        <View
+            style="@style/divider_line"
+            android:layout_width="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_recommend" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_recommend_title"
+        android:layout_toRightOf="@id/recycle_view">
+
+        <com.tysq.ty_android.widget.TagFlowLayout
+            android:id="@+id/tag_flow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+</RelativeLayout>

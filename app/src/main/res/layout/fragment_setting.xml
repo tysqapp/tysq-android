@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color">
+
+    <View
+        android:id="@+id/v_divider_1"
+        style="@style/divider_line"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_account"
+        style="@style/info_ll"
+        android:layout_below="@id/v_divider_1">
+
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="60dp"
+            android:layout_weight="0"
+            android:text="@string/setting_account" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            style="@style/info_tv"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="xxx@xx.com" />
+
+        <TextView
+            android:id="@+id/tv_email_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_btn_round_blue_bg"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/setting_verify"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider_2"
+        style="@style/divider_line"
+        android:layout_width="20dp"
+        android:layout_below="@id/ll_account"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        style="@style/info_ll"
+        android:layout_below="@id/v_divider_2">
+
+        <TextView
+            style="@style/normal_text"
+            android:layout_width="60dp"
+            android:layout_weight="0"
+            android:text="@string/setting_password" />
+
+        <TextView
+            style="@style/info_tv"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="@string/setting_set" />
+
+        <ImageView style="@style/right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_below="@id/ll_password" />
+
+    <TextView
+        android:id="@+id/tv_quit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/selector_rect_white_bg"
+        android:gravity="center"
+        android:text="@string/setting_quit"
+        android:textColor="@color/red"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_above="@id/tv_quit"
+        android:layout_marginTop="10dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_alignBottom="@id/tv_quit"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

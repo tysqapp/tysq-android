@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/blank_tv_tip"
+                    android:text="@string/article_report_person"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <View style="@style/divider_line"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View style="@style/divider_line"/>
+
+            <View style="@style/divider_line_10dp"/>
+
+            <View style="@style/divider_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="90dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@drawable/selector_rect_white_bg">
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="80dp"
+                    style="@style/reset_pwd_et"
+                    android:hint="@string/article_report_et_hint"
+                    android:inputType="text"
+                    android:gravity="top"
+                    android:paddingTop="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textColor="#FF9FADC2"
+                    android:layout_below="@id/et_description"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="17dp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/divider_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_report"
+                    android:layout_width="335dp"
+                    android:layout_height="50dp"
+                    android:background="@color/shadow_black_color"
+                    android:text="@string/article_report"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:clickable="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

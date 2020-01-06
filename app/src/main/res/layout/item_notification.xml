@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="70dp"
+    android:id="@+id/rl_notification">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/placeholder_user_photo" />
+
+    <View
+        android:id="@+id/red_dot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:background="@drawable/shape_red_round"
+        android:layout_alignTop="@id/iv_photo"
+        android:layout_alignEnd="@id/iv_photo"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_photo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="xxxx-xx-xx xx:xx:xx"
+        android:textColor="@color/et_tip_text_color"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_photo"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/iv_photo"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="审核通知"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@id/iv_photo"
+        android:text="很抱歉，你的文章《文章标题文章标题文章标题文章标题》未通过审核"
+        android:textColor="@color/et_tip_text_color"
+        android:textSize="12dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/tv_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_invite_banner"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_banner_tip_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/iv_banner"
+        android:layout_alignTop="@id/iv_banner"
+        android:text="@string/invite_banner_tip"
+        android:textColor="@color/shadow_black_color_1"
+        android:textSize="24dp"
+        android:typeface="sans"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_banner_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/iv_banner"
+        android:layout_alignTop="@id/iv_banner"
+        android:text="@string/invite_banner_tip"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:typeface="sans"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_obtain_coin"
+        android:layout_width="155dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/tv_banner_tip"
+        android:layout_alignStart="@id/tv_banner_tip"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/img_obtain_coin_oppo"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/v_divider_0"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/iv_banner"
+        android:background="@color/rv_color"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/v_tag"
+        style="@style/tag_line"
+        android:layout_below="@id/v_divider_0"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/v_divider_0"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/v_tag"
+        android:gravity="center_vertical"
+        android:text="@string/invite_type"
+        android:textColor="@color/main_text_color"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/v_divider_0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/ic_arrow_right_light_gray"
+        android:gravity="center_vertical"
+        android:text="@string/invite_rule"
+        android:textColor="@color/et_tip_text_color"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/v_divider_1"
+        style="@style/divider_line"
+        android:layout_below="@id/tv_title"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_type_1"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/v_divider_1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_blue"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_invite_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_type_1"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tv_type_1"
+        android:text="@string/invite_code"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_code_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_invite_code"
+        android:layout_alignStart="@id/tv_invite_code"
+        android:layout_marginTop="7dp"
+        android:text="584593"
+        android:textColor="@color/main_blue_color"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_code_info"
+        android:layout_alignStart="@id/tv_code_info"
+        android:layout_marginTop="18dp"
+        android:text="@string/invite_url"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_copy_url"
+        style="@style/btn_blue_style"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/v_divider_1"
+        android:layout_alignEnd="@id/tv_rule"
+        android:layout_marginTop="87dp"
+        android:text="@string/invite_copy"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_url_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_url"
+        android:layout_alignStart="@id/tv_invite_code"
+        android:layout_marginTop="10dp"
+        android:text="www.xinlang.com"
+        android:textColor="@color/main_blue_color"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_type_2"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/tv_url_info"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/shape_round_blue"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_invite_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_type_2"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tv_type_2"
+        android:text="@string/invite_scan_code"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_scale_code"
+        style="@style/btn_blue_style"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/v_divider_1"
+        android:layout_alignEnd="@id/tv_rule"
+        android:layout_marginTop="175dp"
+        android:text="@string/invite_scale_code"
+        android:textSize="12dp"
+        android:visibility="gone"/>
+
+    <!--<ImageView-->
+    <!--android:layout_width="110dp"-->
+    <!--android:layout_height="110dp"-->
+    <!--android:layout_below="@id/tv_invite_scan"-->
+    <!--android:layout_alignStart="@id/tv_invite_scan"-->
+    <!--android:layout_marginStart="-5dp"-->
+    <!--android:layout_marginTop="7dp"-->
+    <!--android:src="@color/shadow_black_color" />-->
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tv_invite_scan"
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@id/tv_type_2"
+        android:scaleType="centerCrop"
+        android:src="@android:color/darker_gray"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/v_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/iv_code"
+        android:background="@color/rv_color"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/v_tag_1"
+        style="@style/tag_line"
+        android:layout_below="@id/v_divider_2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_num"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/v_divider_2"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/v_tag_1"
+        android:gravity="center_vertical"
+        android:text="@string/invite_num_title"
+        android:textColor="@color/main_text_color"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/v_divider_3"
+        style="@style/divider_line"
+        android:layout_below="@id/tv_title_num" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/tv_column"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/main_text_color"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文章标题"
+        android:textColor="@color/main_text_color"
+        android:layout_below="@+id/tv_column"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:text="@string/my_article_refuse_reason"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <com.tysq.ty_android.widget.TagFlowLayout
+        android:id="@+id/tag_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reason"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tag_flow"
+        android:layout_marginTop="18dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_user_photo" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_photo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@id/iv_photo"
+        android:text="作者"
+        android:textColor="@color/main_text_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/tv_author"
+        android:text="时间"
+        android:textColor="@color/tip_text_color"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iv_reading"
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/tv_time"
+        android:src="@drawable/ic_reading" />
+
+    <TextView
+        android:id="@+id/tv_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_author"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_reading"
+        android:text="浏览次数"
+        android:textColor="@color/tip_text_color"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/iv_article_state"
+        android:layout_width="78dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_refuse" />
+
+</RelativeLayout>

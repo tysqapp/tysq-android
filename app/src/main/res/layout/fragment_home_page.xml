@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_control_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white">-->
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:src="@drawable/layer_list_edit" />
+
+    <ImageView
+        android:id="@+id/iv_menu"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_toStartOf="@id/iv_edit"
+        android:padding="10dp"
+        android:src="@drawable/ic_menu_light_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_top_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_toStartOf="@id/iv_menu" />
+
+    <LinearLayout
+        android:id="@+id/ll_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="vertical"
+        android:layout_below="@id/rv_top_category"
+        >
+
+        <View
+            android:id="@+id/v_top_divider"
+            style="@style/divider_line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sub_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_sub_divider"
+        style="@style/divider_line"
+        android:layout_below="@id/ll_sub_category" />
+
+    <View
+        android:id="@+id/v_sub_shade"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignTop="@id/ll_sub_category"
+        android:layout_alignEnd="@id/ll_sub_category"
+        android:background="@drawable/shape_transparent_to_white" />
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="@dimen/dp_45"
+        android:layout_alignTop="@id/rv_top_category"
+        android:layout_alignEnd="@id/rv_top_category"
+        android:background="@drawable/shape_transparent_to_white" />
+
+    <com.bit.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_sub_divider" />
+
+</RelativeLayout>

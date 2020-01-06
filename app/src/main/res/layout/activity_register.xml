@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/page_back_style" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/page_title_style"
+        android:text="@string/register_register" />
+
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/et_style"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="30dp"
+        android:hint="@string/register_enter_email" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/et_style"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="15dp"
+        android:hint="@string/register_enter_pwd"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_referral_code"
+        style="@style/et_style"
+        android:layout_below="@id/et_pwd"
+        android:layout_marginTop="15dp"
+        android:hint="@string/register_enter_referral_code" />
+
+    <EditText
+        android:id="@+id/et_verify_code"
+        style="@style/et_style"
+        android:layout_below="@id/et_referral_code"
+        android:layout_marginTop="15dp"
+        android:hint="@string/register_verify_code" />
+
+    <CheckBox
+        android:id="@+id/cb_protocol"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/et_verify_code"
+        android:layout_marginStart="27.5dp"
+        android:layout_marginTop="12.5dp"
+        android:background="@drawable/selector_blue_check"
+        android:button="@null"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/tv_read_agree"
+        style="@style/page_sub_text_style"
+        android:layout_alignBottom="@id/cb_protocol"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/cb_protocol"
+        android:text="@string/register_read_agree"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_protocol"
+        style="@style/page_sub_text_style"
+        android:layout_alignBottom="@id/cb_protocol"
+        android:layout_marginStart="2dp"
+        android:layout_toEndOf="@id/tv_read_agree"
+        android:text="@string/register_protocol"
+        android:textColor="@color/light_blue_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        style="@style/btn_blue_style"
+        android:layout_below="@id/tv_protocol"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="27.5dp"
+        android:text="@string/register_register" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/page_sub_text_style"
+        android:layout_below="@id/tv_register"
+        android:layout_alignStart="@id/tv_register"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/register_login" />
+
+    <ImageView
+        android:id="@+id/iv_pwd_state"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/et_pwd"
+        android:layout_alignEnd="@id/et_pwd"
+        android:padding="15dp"
+        android:src="@drawable/ic_pwd_show" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/et_verify_code"
+        android:layout_alignEnd="@id/et_verify_code"
+        android:padding="15dp"
+        android:src="@drawable/ic_refresh" />
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/et_verify_code"
+        android:layout_toStartOf="@id/iv_refresh" />
+
+</RelativeLayout>

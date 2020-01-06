@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        style="@style/page_back_style" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/page_title_style"
+        android:text="@string/login_login" />
+
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/et_style"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="50dp"
+        android:hint="@string/login_enter_email" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/et_style"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="22.5dp"
+        android:hint="@string/login_enter_pwd"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_code"
+        style="@style/et_style"
+        android:layout_below="@id/et_pwd"
+        android:layout_marginTop="22.5dp"
+        android:hint="@string/login_enter_code"
+        android:paddingRight="150dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/btn_blue_style"
+        android:layout_below="@id/et_code"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="27.5dp"
+        android:text="@string/login_login" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        style="@style/page_sub_text_style"
+        android:layout_below="@id/tv_login"
+        android:layout_alignStart="@id/tv_login"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/login_register" />
+
+    <TextView
+        android:id="@+id/tv_forget_pwd"
+        style="@style/page_sub_text_style"
+        android:layout_below="@id/tv_login"
+        android:layout_alignEnd="@id/tv_login"
+        android:layout_marginTop="5dp"
+        android:paddingTop="10dp"
+        android:text="@string/login_forget_pwd" />
+
+    <!-- 密码是否可见按钮 -->
+    <ImageView
+        android:id="@+id/iv_pwd_state"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/et_pwd"
+        android:layout_alignEnd="@id/et_pwd"
+        android:padding="15dp"
+        android:src="@drawable/ic_pwd_show" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/et_code"
+        android:layout_alignEnd="@id/et_code"
+        android:padding="15dp"
+        android:src="@drawable/ic_refresh"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_code"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/et_code"
+        android:layout_toStartOf="@id/iv_refresh"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="335dp"
+    android:layout_height="wrap_content"
+    android:minHeight="380dp"
+    android:maxHeight="430dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_white_10dp_round_rect">
+
+        <TextView
+            android:id="@+id/tv_reward_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_text_color"
+            android:text="@string/reward_title"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/tv_reward_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reward_des"
+            android:textSize="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dp"
+            android:textColor="@color/main_text_color"/>
+
+        <LinearLayout
+            android:id="@+id/ll_reward_coin_1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_reward_des"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_reward_100"
+                style="@style/ll_reward_coin_style">
+
+                <ImageView
+                    style="@style/ic_reward_coin_style"/>
+
+                <CheckedTextView
+                    android:id="@+id/ctv_reward_100"
+                    style="@style/reward_coin_text"
+                    android:text="@string/reward_100"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reward_200"
+                style="@style/ll_reward_coin_style"
+                android:layout_marginLeft="27dp">
+
+                <ImageView
+                    style="@style/ic_reward_coin_style"/>
+
+                <CheckedTextView
+                    android:id="@+id/ctv_reward_200"
+                    style="@style/reward_coin_text"
+                    android:text="@string/reward_200"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reward_500"
+                style="@style/ll_reward_coin_style"
+                android:layout_marginLeft="27dp">
+
+                <ImageView
+                    style="@style/ic_reward_coin_style"/>
+
+                <CheckedTextView
+                    android:id="@+id/ctv_reward_500"
+                    style="@style/reward_coin_text"
+                    android:text="@string/reward_500"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_reward_coin_2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_reward_1000"
+                style="@style/ll_reward_coin_style">
+
+                <ImageView
+                    style="@style/ic_reward_coin_style"/>
+
+                <CheckedTextView
+                    android:id="@+id/ctv_reward_1000"
+                    style="@style/reward_coin_text"
+                    android:text="@string/reward_1000"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reward_2000"
+                style="@style/ll_reward_coin_style"
+                android:layout_marginLeft="27dp">
+
+                <ImageView
+                    style="@style/ic_reward_coin_style"/>
+
+                <CheckedTextView
+                    android:id="@+id/ctv_reward_2000"
+                    style="@style/reward_coin_text"
+                    android:text="@string/reward_2000"/>
+
+            </LinearLayout>
+
+            <CheckedTextView
+                android:id="@+id/ctv_reward_customize"
+                style="@style/reward_coin_text"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:text="@string/reward_customize"
+                android:layout_marginLeft="27dp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:background="@drawable/selector_btn_reward_bg"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_edit_text_customize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_reward_coin_2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="12.5dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_reward"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/et_reward_coin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="16dp"
+                android:textColorHint="@color/des_text_color"
+                android:hint="@string/reward_edit_text_coin_tip"
+                android:maxLength="8"
+                android:layout_marginLeft="9.5dp"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="@color/main_text_color"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/divider_line"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/main_blue_color"/>
+        <TextView
+            android:id="@+id/tv_reward"
+            android:layout_width="295dp"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_btn_blue_bg"
+            android:text="@string/reward_title"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="29dp"
+            android:layout_marginTop="29dp"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_rank_tip_top_close"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+apply plugin: 'android-aspectjx'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+
+        applicationId "com.tysq.ty_android"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+
+        vectorDrawables {
+            useSupportLibrary true
+        }
+
+        // 配置 java apt
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        targetModuleName: 'Ty'
+                ]
+            }
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../../certificate/tysq.jks")
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+
+        release {
+            storeFile file("../../certificate/tysq.jks")
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java',
+                            'src/main/creator',
+                            'src/main/jerryEditor',
+                            'src/main/upload',
+                            'src/main/model',
+                            'src/main/jerryMedia',
+                            'src/main/jerryImageWatcher',
+                            'src/main/jerryWebSocket']
+        }
+    }
+
+    flavorDimensions "product"
+
+    productFlavors {
+        tysq {
+            buildConfigField "String", "API_VERSION", "\"v5/\""
+
+            manifestPlaceholders = [APP_LOGO_ICON: "@mipmap/ic_launcher"]
+
+            dimension "product"
+
+        }
+
+        local_debug {
+            buildConfigField "String", "API_VERSION", "\"\""
+
+            manifestPlaceholders = [APP_LOGO_ICON: "@drawable/logo_local_debug"]
+
+            dimension "product"
+
+        }
+    }
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                //在这里修改apk文件名
+                def time = releaseTime();
+                outputFileName = "V${variant.versionName}-${variant.name}-${time}.apk"
+            }
+    }
+}
+
+static def releaseTime() {
+
+    def date = new Date()
+    def s = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
+
+    return s.format(date);
+}
+
+configurations {
+    all*.exclude group: 'com.android.support', module: 'multidex-instrumentation'
+    all {
+        resolutionStrategy {
+            eachDependency {
+                DependencyResolveDetails details ->
+                    if (details.requested.group == 'com.android.support'
+                            && details.requested.name == 'multidex') {
+                        details.useVersion '1.0.2'
+                        details.because 'Unified the version of Multidex.'
+                    }
+            }
+        }
+    }
+}
+
+dependencies {
+    def lib = rootProject.ext
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:appcompat-v7:$lib.appcompatV7"
+    implementation "com.android.support:design:$lib.appcompatV7"
+
+    testImplementation "junit:junit:$lib.junitVersion"
+
+    // 依赖注入（dagger2）
+    annotationProcessor "com.google.dagger:dagger-compiler:$lib.dagger"
+
+    // 视图注入（butterKnife）
+    annotationProcessor "com.jakewharton:butterknife-compiler:$lib.butterknife"
+
+    implementation "org.aspectj:aspectjrt:$lib.aspectjrt"
+
+    implementation("com.shuyu:GSYVideoPlayer:$lib.GSYVideoPlayer") {
+        exclude group: 'com.android.support'
+    }
+
+    implementation "com.github.LuckSiege.PictureSelector:picture_library:$lib.PictureSelector"
+
+    implementation project(":lib:base:lib_base")
+
+    implementation project(":lib:widget:lib_file_selector")
+    implementation project(":lib:widget:lib_banner")
+    implementation project(":lib:widget:lib_wheelview")
+
+    implementation project(":lib:special:lib_websocket")
+    implementation project(":lib:special:lib_jerry_editor")
+    implementation project(":lib:special:lib_cache")
+    implementation project(":lib:special:lib_download")
+
+    implementation project(":creator:lib_creator_mvp")
+    implementation project(":creator:lib_creator_cache")
+
+    // 日活统计
+    implementation "com.google.firebase:firebase-core:$lib.firebaseCore"
+    // crash统计
+    implementation "com.crashlytics.sdk.android:crashlytics:$lib.firebaseCrashlytics"
+
+    // 多包
+    implementation "com.android.support:multidex:$lib.multidex"
+
+    implementation "com.github.chrisbanes:PhotoView:2.0.0"
+
+    implementation "com.android.support:support-v4:23.1.1"
+    implementation "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar"
+
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:$lib.dbflowVersion"
+
+}
+
+apply plugin: 'com.google.gms.google-services'

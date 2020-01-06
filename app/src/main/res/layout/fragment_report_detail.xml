@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color">
+
+    <View
+        style="@style/divider_line_10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_report_article"
+        style="@style/info_ll"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp">
+
+        <TextView
+            android:id="@+id/report_article"
+            style="@style/list_item_name"
+            android:textColor="@color/report_item_color"
+            android:text="@string/report_detail_article"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_report_article_title"
+            style="@style/report_detail_text"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/report_article"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:background="@drawable/ic_arrow_right_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View style="@style/white_20dp_divider" />
+
+    <LinearLayout
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/list_item_name"
+            android:text="@string/report_detail_content"
+            android:textColor="@color/report_item_color"/>
+
+        <TextView
+            android:id="@+id/tv_report_content"
+            style="@style/list_item_info"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View style="@style/white_20dp_divider" />
+
+    <LinearLayout
+        style="@style/info_ll"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/report_detail_question_description"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/report_item_color"/>
+
+        <TextView
+            android:id="@+id/tv_report_description"
+            style="@style/report_detail_text"
+            android:maxWidth="248dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_line_10dp"/>
+
+    <LinearLayout
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/list_item_name"
+            android:text="@string/report_detail_process_result"
+            android:textColor="@color/report_item_color"/>
+
+        <TextView
+            android:id="@+id/tv_report_result"
+            style="@style/list_item_info"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <View style="@style/white_20dp_divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_handle_result"
+        style="@style/info_ll"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/report_detail_result_description"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/report_item_color"/>
+
+        <TextView
+            android:id="@+id/tv_report_result_description"
+            style="@style/report_detail_text"
+            android:maxWidth="248dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider_line_10dp"/>
+
+    <LinearLayout
+        style="@style/info_ll">
+
+        <TextView
+            style="@style/list_item_name"
+            android:text="@string/report_detail_report_number"
+            android:textColor="@color/report_item_color"/>
+
+        <TextView
+            android:id="@+id/tv_report_num"
+            style="@style/list_item_info"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

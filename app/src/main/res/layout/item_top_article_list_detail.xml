@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:id="@+id/rl_top_ariticle_list">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="[寻找最完美书评]谁的青春不迷茫---读村上春 树《挪威的森林》"
+        android:textSize="14dp"
+        android:textColor="@color/main_text_color"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"
+        android:lineSpacingExtra="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_title"/>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_video"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/rv_color"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/iv_play_bg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_black_alpha_round"
+        app:srcCompat="@drawable/ic_triangle_right_fill_white"
+        android:layout_alignTop="@id/iv_play_bg"
+        android:layout_alignStart="@id/iv_play_bg"
+        android:padding="5dp"
+        android:paddingStart="7.5dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/alpha_black_color"
+        android:layout_alignEnd="@id/iv_cover"
+        android:layout_alignBottom="@id/iv_cover"
+        app:srcCompat="@drawable/ic_download"
+        android:padding="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_img_watcher"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_black_alpha_top_left_round"
+        android:layout_toStartOf="@id/iv_download"
+        android:layout_alignBottom="@id/iv_cover"
+        app:srcCompat="@drawable/ic_img"
+        android:padding="12dp"
+        android:layout_marginEnd="0.5dp"
+        />
+
+</RelativeLayout>

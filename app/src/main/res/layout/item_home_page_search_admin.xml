@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="70dp"
+    android:id="@+id/rl_search_admin">
+
+    <RelativeLayout
+        android:id="@+id/rl_page_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:minHeight="70dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/placeholder_user_photo"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/iv_photo">
+
+            <LinearLayout
+                android:id="@+id/ll_admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称昵称" />
+
+                <ImageView
+                    android:id="@+id/iv_lv"
+                    android:layout_width="34dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_lv_1" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_admin_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_job"
+                    style="@style/sub_text"
+                    android:layout_width="wrap_content"
+                    android:text="文章经理"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/v_divider_1"
+                    style="@style/tag_line_12dp"
+                    android:layout_toRightOf="@id/tv_job"/>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/sub_text"
+                    android:layout_width="wrap_content"
+                    android:text="动漫"
+                    android:layout_toRightOf="@id/v_divider_1"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/v_divider_2"
+                    style="@style/tag_line_12dp"
+                    android:layout_toRightOf="@id/tv_type" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/sub_text"
+                    android:layout_width="wrap_content"
+                    android:text="广东广州"
+                    android:layout_toRightOf="@id/v_divider_2"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_introduction"
+                style="@style/sub_text"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginRight="10dp"
+                android:text="这个学习交流群怎么找不到了？dfdddddddddddddddddddddddddddddddddddddd"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rl_page_search"/>
+</RelativeLayout>

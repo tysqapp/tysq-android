@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rv_color"
+    android:orientation="vertical">
+
+    <View
+        style="@style/divider_line"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        style="@style/info_ll"
+        android:layout_height="60dp">
+
+        <EditText
+            android:id="@+id/et_nick"
+            style="@style/reset_pwd_et"
+            android:hint="@string/nick_change_hint"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_close_fill_gray" />
+
+    </LinearLayout>
+
+    <View style="@style/divider_line" />
+
+</LinearLayout>

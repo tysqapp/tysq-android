@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="380dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/shape_white_10dp_round_rect"
+        android:gravity="top"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/article_detail_exam_result"
+            android:textColor="@color/main_text_color"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_pass"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/tv_title"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_pass"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_checkbox_style"
+                android:button="@null"
+                android:clickable="false"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/tv_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/article_detail_exam_pass"
+                android:textColor="@color/main_blue_color"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_refuse"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/tv_title"
+            android:layout_toEndOf="@id/ll_pass"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_refuse"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_checkbox_style"
+                android:clickable="false"
+                android:button="@null" />
+
+            <TextView
+                android:id="@+id/tv_refuse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/article_detail_exam_refuse"
+                android:textColor="@color/tip_text_color"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_exam_pass_tip"
+            android:layout_width="43dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/ll_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_exam_pass_tip" />
+
+        <TextView
+            android:id="@+id/tv_exam_pass_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/iv_exam_pass_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/article_detail_exam_pass_tip" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/btn_blue_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/common_confirm" />
+
+        <EditText
+            android:id="@+id/et_refuse_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/tv_confirm"
+            android:layout_below="@id/ll_pass"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_edittext_with_gray_border_bg"
+            android:gravity="start|top"
+            android:hint="@string/article_detail_exam_refuse_reason"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/main_text_color"
+            android:textColorHint="@color/des_text_color"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_rank_tip_top_close" />
+
+</LinearLayout>

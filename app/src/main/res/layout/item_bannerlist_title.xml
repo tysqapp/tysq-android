@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <EditText
+        android:layout_height="35dp"
+        android:id="@+id/et_search"
+        style="@style/et_style"
+        android:background="#F5F5F5"
+        android:text="请输入用户昵称搜索"
+        android:textSize="14dp"
+        android:paddingLeft="34dp"
+        android:textColor="#9FADC2"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/ic_search_blank"
+        android:layout_alignLeft="@+id/et_search"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/ic_cancel"
+        android:layout_alignRight="@+id/et_search"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp"/>
+
+    <View
+        style="@style/divider_line"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

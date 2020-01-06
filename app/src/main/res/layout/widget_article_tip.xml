@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingTop="7.5dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_review_img"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_comment" />
+
+    <TextView
+        android:id="@+id/tv_review_count"
+        style="@style/tip_text"
+        android:layout_alignStart="@id/iv_review_img"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:text="评论数" />
+
+    <ImageView
+        android:id="@+id/iv_read_img"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="50dp"
+        android:layout_toStartOf="@id/iv_review_img"
+        android:src="@drawable/ic_reading" />
+
+    <TextView
+        android:id="@+id/tv_read_count"
+        style="@style/tip_text"
+        android:layout_alignStart="@id/iv_read_img"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:text="浏览量" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        style="@style/tip_text"
+        android:layout_centerVertical="true"
+        android:text="作者" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/tip_text"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@id/tv_author"
+        android:text="时间" />
+
+
+</RelativeLayout>

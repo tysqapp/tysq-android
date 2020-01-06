@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="centerCrop"
+        android:src="@color/replace_color" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_alignStart="@id/iv_cover"
+        android:layout_alignTop="@id/iv_cover"
+        android:background="@drawable/ic_crop_left_top_round" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_alignStart="@id/iv_cover"
+        android:layout_alignBottom="@id/iv_cover"
+        android:background="@drawable/ic_crop_left_bottom_round" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_alignEnd="@id/iv_cover"
+        android:layout_alignBottom="@id/iv_cover"
+        android:background="@drawable/ic_crop_right_bottom_round" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_alignTop="@id/iv_cover"
+        android:layout_alignEnd="@id/iv_cover"
+        android:background="@drawable/ic_crop_right_top_round" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/cloud_title_tv"
+        android:layout_alignTop="@id/iv_cover"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/iv_cover"
+        android:text="标题标题标题标题标题标题" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/cloud_info"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/iv_cover"
+        android:text="时间" />
+
+    <TextView
+        android:id="@+id/tv_size"
+        style="@style/cloud_info"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@id/tv_time"
+        android:text="size" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/cloud_info"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@id/tv_size"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        android:text="@string/cloud_list_waiting" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_alignLeft="@id/iv_cover"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

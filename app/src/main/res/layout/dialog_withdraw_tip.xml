@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_10dp_round_rect"
+        android:gravity="top"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="@string/withdraw_coin_amount"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_amount_info"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/tv_amount"
+            android:layout_toEndOf="@id/tv_amount"
+            android:gravity="bottom|end"
+            android:paddingBottom="5dp"
+            android:text="1000,000"
+            android:textColor="@color/main_blue_color"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/v_divider_0"
+            style="@style/divider_line"
+            android:layout_below="@id/tv_amount" />
+
+        <TextView
+            android:id="@+id/tv_exchange_btc"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/v_divider_0"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="@string/withdraw_exchange_btc"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_exchange_btc_info"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/tv_exchange_btc"
+            android:layout_toEndOf="@id/tv_exchange_btc"
+            android:gravity="bottom|end"
+            android:paddingBottom="5dp"
+            android:text="@string/withdraw_btc"
+            android:textColor="@color/main_blue_color"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/v_divider_1"
+            style="@style/divider_line"
+            android:layout_below="@id/tv_exchange_btc" />
+
+        <TextView
+            android:id="@+id/tv_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/v_divider_1"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="@string/withdraw_fee_title"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_fee_info"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/tv_fee"
+            android:layout_toEndOf="@id/tv_fee"
+            android:gravity="bottom|end"
+            android:paddingBottom="5dp"
+            android:text="@string/withdraw_btc_amount"
+            android:textColor="@color/main_blue_color"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/v_divider_2"
+            style="@style/divider_line"
+            android:layout_below="@id/tv_fee" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@id/v_divider_2"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:text="@string/withdraw_result_title"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_result_info"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/tv_result"
+            android:layout_toEndOf="@id/tv_result"
+            android:gravity="bottom|end"
+            android:paddingBottom="5dp"
+            android:text="@string/withdraw_btc_amount"
+            android:textColor="@color/main_blue_color"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/v_divider_3"
+            style="@style/divider_line"
+            android:layout_below="@id/tv_result" />
+
+        <TextView
+            android:id="@+id/tv_commit"
+            style="@style/btn_blue_style"
+            android:layout_below="@id/v_divider_3"
+            android:layout_marginTop="50dp"
+            android:text="@string/withdraw_commit_sure" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_rank_tip_top_close" />
+
+</LinearLayout>

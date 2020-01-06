@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="xxxx-xx-xx"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@id/tv_time"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:singleLine="true"
+        android:text="111.cc"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <View
+        style="@style/divider_line"
+        android:layout_below="@id/tv_time"
+        android:layout_marginStart="20dp" />
+
+</RelativeLayout>

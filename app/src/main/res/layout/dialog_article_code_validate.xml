@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="490dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="410dp"
+        android:background="@drawable/shape_white_10dp_round_rect"
+        android:gravity="top">
+
+        <com.tysq.ty_android.widget.CustomRoundAngleImageView
+            android:id="@+id/iv_code"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop" />
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/et_style"
+            android:layout_width="165dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/iv_code"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/article_code"
+            android:paddingStart="10dp"
+            android:paddingEnd="40dp"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="54dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@id/et_code"
+            android:layout_alignEnd="@id/et_code"
+            android:padding="15dp"
+            android:src="@drawable/ic_refresh" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            style="@style/btn_blue_style"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@id/et_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="17dp"
+            android:layout_toEndOf="@id/et_code"
+            android:text="@string/common_confirm"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_rank_tip_top_close" />
+
+</LinearLayout>

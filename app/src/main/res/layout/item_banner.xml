@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/rv_color" />
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/v_divider"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_ad" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/v_divider"
+        android:layout_alignParentEnd="true"
+        android:drawableEnd="@drawable/ic_arrow_right_light_gray"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/article_list_more_ad"
+        android:textColor="@color/et_tip_text_color" />
+
+    <com.zinc.lib_banner.JerryBanner
+        android:id="@+id/jerry_banner"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/iv_img"
+        android:layout_marginStart="20dp"
+        app:banner_pointContainerBackground="@color/transparent"
+        app:banner_pointDrawable="@drawable/selector_banner_point" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/rv_color" />
+
+</RelativeLayout>

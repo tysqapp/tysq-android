@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="252dp"
+    android:background="@drawable/shape_white_20dp_round_top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cloud_pic"
+        android:textColor="@color/main_blue_color"
+        android:textSize="14dp" />
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:id="@+id/tv_video"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cloud_video"
+        android:textColor="@color/main_blue_color"
+        android:textSize="14dp" />
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:id="@+id/tv_audio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cloud_audio"
+        android:textColor="@color/main_blue_color"
+        android:textSize="14dp" />
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cloud_other"
+        android:textColor="@color/main_blue_color"
+        android:textSize="14dp" />
+
+    <View style="@style/divider_line" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cloud_cancel"
+        android:textColor="@color/main_blue_color"
+        android:textSize="14dp" />
+
+</LinearLayout>

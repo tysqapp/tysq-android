@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/img_rank_tip_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_info"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_white_10dp_round_rect"
+        android:minHeight="350dp">
+
+        <ImageView
+            android:id="@+id/iv_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/img_rank_tip_top_bg"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_top_bg"
+            android:layout_marginStart="27.5dp"
+            android:layout_marginTop="27.5dp"
+            android:layout_marginEnd="32.5dp"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/rank_tip_read_article"
+            android:textColor="@color/main_text_color"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_exchange"
+            style="@style/btn_blue_style"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/tv_tip"
+            android:layout_marginStart="27.5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="27.5dp"
+            android:text="@string/rank_tip_exchange" />
+
+        <TextView
+            android:id="@+id/tv_how_to_obtain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_exchange"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="32.5dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/rank_tip_how_to_get"
+            android:textColor="@color/main_blue_color"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/rl_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_rank_tip_top_close" />
+
+</RelativeLayout>

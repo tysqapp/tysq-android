@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="196dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginEnd="20dp">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:background="@drawable/shape_rect_gradual_gold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:layout_alignStart="@id/iv_bg"
+            android:layout_alignTop="@id/iv_bg"
+            android:layout_alignEnd="@id/iv_bg"
+            android:layout_alignBottom="@id/iv_bg"
+            android:background="@drawable/img_rank_top_bg"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_coin_info"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/iv_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="105500金币"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_coin_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_coin_format"
+            android:layout_below="@id/tv_coin_info"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:alpha="0.5"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_coin_withdraw"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_coin_info"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_white_round_line"
+            android:gravity="center"
+            android:text="@string/my_coin_withdraw"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_coin_buy"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/tv_coin_withdraw"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/shape_white_round_line"
+            android:gravity="center"
+            android:text="@string/my_coin_buy"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/rl_bg"
+        android:background="@color/rv_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/v_divider">
+
+        <View
+            android:id="@+id/v_blue_divider"
+            style="@style/tag_line"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@id/v_blue_divider"
+            android:gravity="center"
+            android:text="@string/my_coin_detail"
+            android:textColor="@color/main_text_color"
+            android:textStyle="bold" />
+
+        <View
+            style="@style/divider_line"
+            android:layout_below="@id/tv_detail_title" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

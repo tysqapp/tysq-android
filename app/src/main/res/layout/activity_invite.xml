@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/toolbar_back_style" />
+
+        <RelativeLayout
+            android:id="@+id/rl_invite_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/iv_back">
+
+            <TextView
+                android:id="@+id/tv_invite_friend"
+                style="@style/tv_title"
+                android:layout_height="wrap_content"
+                android:text="邀请好友"
+                android:textStyle="bold"
+                android:textColor="@color/main_blue_color"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:id="@+id/v_divider_1"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:background="@drawable/shape_round_blue"
+                android:layout_below="@id/tv_invite_friend"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_friend_list"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/rl_invite_friend">
+
+            <TextView
+                android:id="@+id/tv_friend_list"
+                style="@style/tv_title"
+                android:layout_height="wrap_content"
+                android:text="好友列表"
+                android:textStyle="bold"
+                android:textColor="@color/et_tip_text_color"
+                android:layout_centerVertical="true"/>
+
+            <View
+                android:id="@+id/v_divider_2"
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+                android:background="@drawable/shape_round_blue"
+                android:layout_below="@id/tv_friend_list"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_menu_black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.bit.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/rv_color" />
+
+    <View
+        android:id="@+id/v_tag"
+        style="@style/tag_line"
+        android:layout_below="@id/v_divider_1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@id/v_divider_1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/my_coin_order_paid_already"
+        android:textColor="@color/main_blue_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignTop="@id/tv_order_status"
+        android:layout_marginStart="10dp"
+        android:layout_toStartOf="@id/tv_order_status"
+        android:layout_toEndOf="@id/v_tag"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/order_num"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:ellipsize="end"/>
+
+    <View
+        android:id="@+id/v_divider_2"
+        style="@style/divider_line"
+        android:layout_below="@id/tv_order_num"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/tv_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@id/v_divider_2"
+        android:layout_alignStart="@id/v_divider_2"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/order_price"
+        android:textColor="@color/des_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_order_price_info"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/v_divider_2"
+        android:layout_alignTop="@id/tv_order_price"
+        android:layout_toEndOf="@id/tv_order_price"
+        android:gravity="center_vertical"
+        android:text="¥1000"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_order_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_below="@id/tv_order_price"
+        android:layout_alignStart="@id/v_divider_2"
+        android:gravity="center_vertical"
+        android:text="@string/my_coin_exchange"
+        android:textColor="@color/des_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_order_exchange_info"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignTop="@id/tv_order_exchange"
+        android:layout_toEndOf="@id/tv_order_exchange"
+        android:gravity="center_vertical"
+        android:text="11000"
+        android:textColor="@color/main_text_color"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/tv_order_exchange"
+        android:layout_alignStart="@id/v_divider_2"
+        android:gravity="center_vertical"
+        android:text="xxxx-xx-xx xx:xx:xx"
+        android:textColor="@color/des_text_color"
+        android:textSize="14dp" />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/toolbar_back_style" />
+
+        <TextView
+            style="@style/tv_title"
+            android:text="@string/cloud_title" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_uploaded"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_uploaded"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/cloud_uploaded"
+                android:textColor="@color/main_blue_color"
+                android:textSize="14dp" />
+
+            <View
+                android:id="@+id/v_uploaded"
+                android:layout_width="20dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round_blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_uploading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_uploading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/cloud_uploading"
+                android:textColor="@color/main_blue_color"
+                android:textSize="14dp" />
+
+            <View
+                android:id="@+id/v_uploading"
+                android:layout_width="20dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round_blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_download"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/cloud_download_with_num"
+                android:textColor="@color/main_blue_color"
+                android:textSize="14dp" />
+
+            <View
+                android:id="@+id/v_download"
+                android:layout_width="20dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_round_blue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        style="@style/divider_line" />
+
+    <com.bit.widget.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View style="@style/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_upload"
+            style="@style/btn_blue_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/cloud_upload" />
+
+    </LinearLayout>
+
+</LinearLayout>
